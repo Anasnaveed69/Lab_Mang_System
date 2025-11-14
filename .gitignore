@@ -1,0 +1,30 @@
+# Compiled object files
+*.o
+obj/
+bin/
+
+# Data files
+data/
+
+# CCCC reports
+cccc_report/
+cccc_report_html/
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+*.sublime-*
+
+# OS files
+.DS_Store
+Thumbs.db
+*.exe
+
+# Build artifacts
+*.a
+*.so
+*.dylib
+
