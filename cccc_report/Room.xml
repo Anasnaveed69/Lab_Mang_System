@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Detailed report on module Room-->
+<CCCC_Project>
+<module_summary>
+<lines_of_code value="73" level="0" />
+<lines_of_code_per_member_function value="******" level="0" />
+<McCabes_cyclomatic_complexity value="4" level="0" />
+<McCabes_cyclomatic_complexity_per_member_function value="******" level="2" />
+<lines_of_code value="0" level="0" />
+<lines_of_code_per_member_function value="********" level="0" />
+<lines_of_code_per_line_of_comment value="******" level="2" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+<weighted_methods_per_class_unity value="13" level="0" />
+<weighted_methods_per_class_visibility value="13" level="0" />
+<depth_of_inheritance_tree value="0" level="0" />
+<number_of_children value="0" level="0" />
+<coupling_between_objects value="5" level="0" />
+<IF4 value="16" level="0" />
+<IF4_per_member_function value="********" level="2" />
+<IF4_visible value="16" level="0" />
+<IF4_visible_per_member_function value="********" level="2" />
+<IF4_concrete value="0" level="0" />
+<IF4_concrete_per_member_function value="********" level="0" />
+</module_summary>
+<module_detail>
+<description>definition</description>
+<source_reference file="include\Room.h" line="9" />
+<lines_of_code value="8" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</module_detail>
+<procedural_detail>
+<member_function>
+<name>Room()</name>
+<extent>
+<description>definition</description>
+<source_reference file="src\Room.cpp" line="3" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include\Room.h" line="17" />
+</extent>
+<lines_of_code value="2" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>Room(const string &amp;,const string &amp;,const string &amp;,int)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src\Room.cpp" line="5" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include\Room.h" line="18" />
+</extent>
+<lines_of_code value="3" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>deserialize(ifstream &amp;)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src\Room.cpp" line="53" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include\Room.h" line="28" />
+</extent>
+<lines_of_code value="14" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getBuildingId()</name>
+<extent>
+<description>definition</description>
+<source_reference file="src\Room.cpp" line="16" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include\Room.h" line="21" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getCapacity()</name>
+<extent>
+<description>definition</description>
+<source_reference file="src\Room.cpp" line="20" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include\Room.h" line="22" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getRoomId()</name>
+<extent>
+<description>definition</description>
+<source_reference file="src\Room.cpp" line="8" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include\Room.h" line="19" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getRoomNumber()</name>
+<extent>
+<description>definition</description>
+<source_reference file="src\Room.cpp" line="12" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include\Room.h" line="20" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>operator &lt;&lt;(ostream &amp;,const Room &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="include\Room.h" line="29" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>serialize(ofstream &amp;)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src\Room.cpp" line="40" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include\Room.h" line="27" />
+</extent>
+<lines_of_code value="13" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>setBuildingId(const string &amp;)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src\Room.cpp" line="32" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include\Room.h" line="25" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>setCapacity(int)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src\Room.cpp" line="36" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include\Room.h" line="26" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>setRoomId(const string &amp;)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src\Room.cpp" line="24" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include\Room.h" line="23" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>setRoomNumber(const string &amp;)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src\Room.cpp" line="28" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include\Room.h" line="24" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+</procedural_detail>
+<structural_detail>
+<module>
+<name>Room</name>
+<client_module>
+<name>StorageManager</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src\StorageManager.cpp" line="73" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\StorageManager.h" line="32" />
+</extent>
+</client_module>
+<supplier_module>
+<name>ifstream</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src\Room.cpp" line="53" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\Room.h" line="28" />
+</extent>
+<name>ofstream</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src\Room.cpp" line="40" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\Room.h" line="27" />
+</extent>
+<name>ostream</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\Room.h" line="29" />
+</extent>
+<name>string</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src\Room.cpp" line="5" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src\Room.cpp" line="5" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src\Room.cpp" line="5" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src\Room.cpp" line="24" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src\Room.cpp" line="28" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src\Room.cpp" line="32" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="include\Room.h" line="11" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="include\Room.h" line="12" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="include\Room.h" line="13" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\Room.h" line="18" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\Room.h" line="18" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\Room.h" line="18" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\Room.h" line="23" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\Room.h" line="24" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\Room.h" line="25" />
+</extent>
+</supplier_module>
+</module>
+</structural_detail>
+</CCCC_Project>

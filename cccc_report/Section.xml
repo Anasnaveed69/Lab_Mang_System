@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Detailed report on module Section-->
+<CCCC_Project>
+<module_summary>
+<lines_of_code value="143" level="0" />
+<lines_of_code_per_member_function value="******" level="0" />
+<McCabes_cyclomatic_complexity value="10" level="0" />
+<McCabes_cyclomatic_complexity_per_member_function value="******" level="2" />
+<lines_of_code value="0" level="0" />
+<lines_of_code_per_member_function value="********" level="0" />
+<lines_of_code_per_line_of_comment value="******" level="2" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="******" level="2" />
+<weighted_methods_per_class_unity value="20" level="0" />
+<weighted_methods_per_class_visibility value="20" level="0" />
+<depth_of_inheritance_tree value="0" level="0" />
+<number_of_children value="0" level="0" />
+<coupling_between_objects value="6" level="0" />
+<IF4 value="25" level="0" />
+<IF4_per_member_function value="********" level="2" />
+<IF4_visible value="16" level="0" />
+<IF4_visible_per_member_function value="********" level="2" />
+<IF4_concrete value="0" level="0" />
+<IF4_concrete_per_member_function value="********" level="0" />
+</module_summary>
+<module_detail>
+<description>definition</description>
+<source_reference file="include\Section.h" line="11" />
+<lines_of_code value="11" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</module_detail>
+<procedural_detail>
+<member_function>
+<name>Section()</name>
+<extent>
+<description>definition</description>
+<source_reference file="src\Section.cpp" line="3" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include\Section.h" line="22" />
+</extent>
+<lines_of_code value="3" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>Section(const string &amp;,const string &amp;,const string &amp;,const string &amp;,const string &amp;,const string &amp;)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src\Section.cpp" line="6" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include\Section.h" line="23" />
+</extent>
+<lines_of_code value="6" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>addTA(const string &amp;)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src\Section.cpp" line="63" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include\Section.h" line="38" />
+</extent>
+<lines_of_code value="6" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>deserialize(ifstream &amp;)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src\Section.cpp" line="101" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include\Section.h" line="41" />
+</extent>
+<lines_of_code value="32" level="1" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="******" level="2" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getCourseCode()</name>
+<extent>
+<description>definition</description>
+<source_reference file="src\Section.cpp" line="19" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include\Section.h" line="27" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getInstructorId()</name>
+<extent>
+<description>definition</description>
+<source_reference file="src\Section.cpp" line="23" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include\Section.h" line="28" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getLabName()</name>
+<extent>
+<description>definition</description>
+<source_reference file="src\Section.cpp" line="15" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include\Section.h" line="26" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getRoomId()</name>
+<extent>
+<description>definition</description>
+<source_reference file="src\Section.cpp" line="31" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include\Section.h" line="30" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getSectionId()</name>
+<extent>
+<description>definition</description>
+<source_reference file="src\Section.cpp" line="11" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include\Section.h" line="25" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getSemester()</name>
+<extent>
+<description>definition</description>
+<source_reference file="src\Section.cpp" line="35" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include\Section.h" line="31" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>getTaIds()</name>
+<extent>
+<description>definition</description>
+<source_reference file="src\Section.cpp" line="27" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include\Section.h" line="29" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>operator &lt;&lt;(ostream &amp;,const Section &amp;)</name>
+<extent>
+<description>declaration</description>
+<source_reference file="include\Section.h" line="42" />
+</extent>
+<lines_of_code value="1" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>removeTA(const string &amp;)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src\Section.cpp" line="69" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include\Section.h" line="39" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>serialize(ofstream &amp;)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src\Section.cpp" line="73" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include\Section.h" line="40" />
+</extent>
+<lines_of_code value="28" level="0" />
+<McCabes_cyclomatic_complexity value="1" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="******" level="2" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>setCourseCode(const string &amp;)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src\Section.cpp" line="47" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include\Section.h" line="34" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>setInstructorId(const string &amp;)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src\Section.cpp" line="51" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include\Section.h" line="35" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>setLabName(const string &amp;)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src\Section.cpp" line="43" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include\Section.h" line="33" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>setRoomId(const string &amp;)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src\Section.cpp" line="55" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include\Section.h" line="36" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>setSectionId(const string &amp;)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src\Section.cpp" line="39" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include\Section.h" line="32" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>setSemester(const string &amp;)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src\Section.cpp" line="59" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include\Section.h" line="37" />
+</extent>
+<lines_of_code value="4" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+</procedural_detail>
+<structural_detail>
+<module>
+<name>Section</name>
+<client_module>
+<name>StorageManager</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src\StorageManager.cpp" line="222" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\StorageManager.h" line="42" />
+</extent>
+</client_module>
+<supplier_module>
+<name>ifstream</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src\Section.cpp" line="101" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\Section.h" line="41" />
+</extent>
+<name>ofstream</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src\Section.cpp" line="73" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\Section.h" line="40" />
+</extent>
+<name>ostream</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\Section.h" line="42" />
+</extent>
+<name>string</name>
+<visible>true</visible>
+<concrete>true</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src\Section.cpp" line="6" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src\Section.cpp" line="6" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src\Section.cpp" line="6" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src\Section.cpp" line="7" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src\Section.cpp" line="7" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src\Section.cpp" line="7" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src\Section.cpp" line="39" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src\Section.cpp" line="43" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src\Section.cpp" line="47" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src\Section.cpp" line="51" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src\Section.cpp" line="55" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src\Section.cpp" line="59" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src\Section.cpp" line="63" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src\Section.cpp" line="69" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="include\Section.h" line="13" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="include\Section.h" line="14" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="include\Section.h" line="15" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="include\Section.h" line="16" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="include\Section.h" line="18" />
+</extent>
+<extent>
+<description>has by value</description>
+<source_reference file="include\Section.h" line="19" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\Section.h" line="23" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\Section.h" line="23" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\Section.h" line="23" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\Section.h" line="24" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\Section.h" line="24" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\Section.h" line="24" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\Section.h" line="32" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\Section.h" line="33" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\Section.h" line="34" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\Section.h" line="35" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\Section.h" line="36" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\Section.h" line="37" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\Section.h" line="38" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\Section.h" line="39" />
+</extent>
+<name>vector</name>
+<visible>false</visible>
+<concrete>true</concrete>
+<extent>
+<description>has by value</description>
+<source_reference file="include\Section.h" line="17" />
+</extent>
+</supplier_module>
+</module>
+</structural_detail>
+</CCCC_Project>

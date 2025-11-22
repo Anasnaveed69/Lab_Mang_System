@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Detailed report on module ifstream-->
+<CCCC_Project>
+<module_summary>
+<lines_of_code value="0" level="0" />
+<lines_of_code_per_member_function value="******" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<McCabes_cyclomatic_complexity_per_member_function value="******" level="0" />
+<lines_of_code value="0" level="0" />
+<lines_of_code_per_member_function value="********" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+<weighted_methods_per_class_unity value="0" level="0" />
+<weighted_methods_per_class_visibility value="0" level="0" />
+<depth_of_inheritance_tree value="0" level="0" />
+<number_of_children value="0" level="0" />
+<coupling_between_objects value="8" level="0" />
+<IF4 value="0" level="0" />
+<IF4_per_member_function value="********" level="0" />
+<IF4_visible value="0" level="0" />
+<IF4_visible_per_member_function value="********" level="0" />
+<IF4_concrete value="0" level="0" />
+<IF4_concrete_per_member_function value="********" level="0" />
+</module_summary>
+<module_detail>
+</module_detail>
+<procedural_detail>
+</procedural_detail>
+<structural_detail>
+<module>
+<name>ifstream</name>
+<client_module>
+<name>Building</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src\Building.cpp" line="44" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\Building.h" line="25" />
+</extent>
+<name>Instructor</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src\Instructor.cpp" line="55" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\Instructor.h" line="28" />
+</extent>
+<name>LabSession</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src\LabSession.cpp" line="84" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\LabSession.h" line="64" />
+</extent>
+<name>MakeupRequest</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src\MakeupRequest.cpp" line="96" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\MakeupRequest.h" line="41" />
+</extent>
+<name>Room</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src\Room.cpp" line="53" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\Room.h" line="28" />
+</extent>
+<name>Section</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src\Section.cpp" line="101" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\Section.h" line="41" />
+</extent>
+<name>TA</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src\TA.cpp" line="55" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\TA.h" line="28" />
+</extent>
+<name>Timing</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src\Timing.cpp" line="71" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\Timing.h" line="55" />
+</extent>
+</client_module>
+<supplier_module>
+</supplier_module>
+</module>
+</structural_detail>
+</CCCC_Project>
