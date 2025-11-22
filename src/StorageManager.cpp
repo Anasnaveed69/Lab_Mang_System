@@ -313,22 +313,55 @@ vector<LabSession> StorageManager::findSessionsBySection(const string& sectionId
 vector<LabSession> StorageManager::findSessionsByWeek(const Date& weekStart) {
     vector<LabSession> allSessions = loadSessions();
     vector<LabSession> result;
+    
+    // Calculate week end (6 days after week start = 7 days total, inclusive)
     Date weekEnd = weekStart;
     weekEnd.day += 6;
-    if (weekEnd.day > 31) {
-        weekEnd.day -= 31;
+    
+    // Handle month overflow properly
+    int daysInMonth[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+    
+    // Check for leap year (simplified: divisible by 4)
+    bool isLeapYear = (weekEnd.year % 4 == 0);
+    if (isLeapYear) {
+        daysInMonth[1] = 29;
+    }
+    
+    if (weekEnd.day > daysInMonth[weekEnd.month - 1]) {
+        weekEnd.day -= daysInMonth[weekEnd.month - 1];
         weekEnd.month++;
         if (weekEnd.month > 12) {
             weekEnd.month = 1;
             weekEnd.year++;
+            // Recheck leap year for new year
+            isLeapYear = (weekEnd.year % 4 == 0);
+            daysInMonth[1] = isLeapYear ? 29 : 28;
+        }
+        // Recheck if still overflowed after month change
+        if (weekEnd.day > daysInMonth[weekEnd.month - 1]) {
+            weekEnd.day -= daysInMonth[weekEnd.month - 1];
+            weekEnd.month++;
+            if (weekEnd.month > 12) {
+                weekEnd.month = 1;
+                weekEnd.year++;
+            }
         }
     }
+    
+    // Find all sessions within the week (inclusive: >= weekStart and <= weekEnd)
     for (const auto& s : allSessions) {
         Date sessionDate = s.getDate();
-        if (!(sessionDate < weekStart) && (sessionDate < weekEnd || 
-            (sessionDate.year == weekEnd.year && 
-             sessionDate.month == weekEnd.month && 
-             sessionDate.day == weekEnd.day))) {
+        // Check if session date is within the week range
+        // sessionDate >= weekStart AND sessionDate <= weekEnd
+        bool isAfterStart = (sessionDate.year > weekStart.year) ||
+                           (sessionDate.year == weekStart.year && sessionDate.month > weekStart.month) ||
+                           (sessionDate.year == weekStart.year && sessionDate.month == weekStart.month && sessionDate.day >= weekStart.day);
+        
+        bool isBeforeEnd = (sessionDate.year < weekEnd.year) ||
+                          (sessionDate.year == weekEnd.year && sessionDate.month < weekEnd.month) ||
+                          (sessionDate.year == weekEnd.year && sessionDate.month == weekEnd.month && sessionDate.day <= weekEnd.day);
+        
+        if (isAfterStart && isBeforeEnd) {
             result.push_back(s);
         }
     }

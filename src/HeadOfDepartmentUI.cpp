@@ -5,6 +5,7 @@
 #include <vector>
 #include <iomanip>
 #include <sstream>
+#include <algorithm>
 using namespace std;
 
 void HeadOfDepartmentUI::showMenu() {
@@ -28,6 +29,16 @@ void HeadOfDepartmentUI::showMenu() {
 void HeadOfDepartmentUI::generateWeeklySchedule() {
     Date weekStart = InputUtil::readDate("Enter Week Start Date");
     vector<LabSession> sessions = StorageManager::findSessionsByWeek(weekStart);
+    
+    // Sort sessions by date for better readability
+    sort(sessions.begin(), sessions.end(), [](const LabSession& a, const LabSession& b) {
+        Date dateA = a.getDate();
+        Date dateB = b.getDate();
+        if (dateA.year != dateB.year) return dateA.year < dateB.year;
+        if (dateA.month != dateB.month) return dateA.month < dateB.month;
+        return dateA.day < dateB.day;
+    });
+    
     vector<Section> sections = StorageManager::loadSections();
     vector<Instructor> instructors = StorageManager::loadInstructors();
     vector<Room> rooms = StorageManager::loadRooms();
@@ -67,6 +78,16 @@ void HeadOfDepartmentUI::generateWeeklySchedule() {
 void HeadOfDepartmentUI::generateWeeklyTimesheet() {
     Date weekStart = InputUtil::readDate("Enter Week Start Date");
     vector<LabSession> sessions = StorageManager::findSessionsByWeek(weekStart);
+    
+    // Sort sessions by date
+    sort(sessions.begin(), sessions.end(), [](const LabSession& a, const LabSession& b) {
+        Date dateA = a.getDate();
+        Date dateB = b.getDate();
+        if (dateA.year != dateB.year) return dateA.year < dateB.year;
+        if (dateA.month != dateB.month) return dateA.month < dateB.month;
+        return dateA.day < dateB.day;
+    });
+    
     vector<Section> sections = StorageManager::loadSections();
     vector<Instructor> instructors = StorageManager::loadInstructors();
     vector<Room> rooms = StorageManager::loadRooms();
@@ -111,6 +132,16 @@ void HeadOfDepartmentUI::generateWeeklyTimesheet() {
 void HeadOfDepartmentUI::generateLabSectionTimesheet() {
     string sectionId = InputUtil::readString("Enter Section ID: ");
     vector<LabSession> sessions = StorageManager::findSessionsBySection(sectionId);
+    
+    // Sort sessions by date
+    sort(sessions.begin(), sessions.end(), [](const LabSession& a, const LabSession& b) {
+        Date dateA = a.getDate();
+        Date dateB = b.getDate();
+        if (dateA.year != dateB.year) return dateA.year < dateB.year;
+        if (dateA.month != dateB.month) return dateA.month < dateB.month;
+        return dateA.day < dateB.day;
+    });
+    
     Section* section = StorageManager::findSection(sectionId);
     if (section == nullptr) {
         cout << "Section not found!" << endl;

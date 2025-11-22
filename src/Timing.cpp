@@ -50,6 +50,10 @@ double Timing::getContactHours() const {
         int startMinutes = actualStart.toMinutes();
         int endMinutes = actualEnd.toMinutes();
         int diff = endMinutes - startMinutes;
+        // Safety check: if end is before start, return 0 (invalid data)
+        if (diff < 0) {
+            return 0.0;
+        }
         return diff / 60.0;
     }
     return 0.0;

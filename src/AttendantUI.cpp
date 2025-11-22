@@ -54,6 +54,13 @@ void AttendantUI::fillTimesheet() {
     }
     Time actualStart = InputUtil::readTime("Enter Actual Start Time");
     Time actualEnd = InputUtil::readTime("Enter Actual End Time");
+    
+    // Validate: end time should be after start time
+    if (actualEnd.toMinutes() <= actualStart.toMinutes()) {
+        cout << "Error: End time must be after start time!" << endl;
+        return;
+    }
+    
     session->getTiming().setActualStart(actualStart);
     session->getTiming().setActualEnd(actualEnd);
     StorageManager::saveSession(*session);
