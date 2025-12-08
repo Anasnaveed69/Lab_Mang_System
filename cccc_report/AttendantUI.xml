@@ -2,14 +2,14 @@
 <!--Detailed report on module AttendantUI-->
 <CCCC_Project>
 <module_summary>
-<lines_of_code value="95" level="0" />
+<lines_of_code value="99" level="0" />
 <lines_of_code_per_member_function value="******" level="0" />
-<McCabes_cyclomatic_complexity value="28" level="0" />
+<McCabes_cyclomatic_complexity value="30" level="0" />
 <McCabes_cyclomatic_complexity_per_member_function value="******" level="2" />
-<lines_of_code value="0" level="0" />
-<lines_of_code_per_member_function value="********" level="0" />
-<lines_of_code_per_line_of_comment value="******" level="2" />
-<McCabes_cyclomatic_complexity_per_line_of_comment value="******" level="2" />
+<lines_of_code value="1" level="0" />
+<lines_of_code_per_member_function value="********" level="2" />
+<lines_of_code_per_line_of_comment value="99.000" level="2" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="30.000" level="2" />
 <weighted_methods_per_class_unity value="4" level="0" />
 <weighted_methods_per_class_visibility value="2" level="0" />
 <depth_of_inheritance_tree value="0" level="0" />
@@ -58,11 +58,11 @@
 <description>declaration</description>
 <source_reference file="include\AttendantUI.h" line="14" />
 </extent>
-<lines_of_code value="37" level="1" />
-<McCabes_cyclomatic_complexity value="12" level="1" />
-<lines_of_comment value="0" level="0" />
-<lines_of_code_per_line_of_comment value="******" level="2" />
-<McCabes_cyclomatic_complexity_per_line_of_comment value="******" level="2" />
+<lines_of_code value="41" level="1" />
+<McCabes_cyclomatic_complexity value="14" level="1" />
+<lines_of_comment value="1" level="0" />
+<lines_of_code_per_line_of_comment value="41.000" level="2" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="14.000" level="2" />
 </member_function>
 <member_function>
 <name>showMenu()</name>
@@ -84,7 +84,7 @@
 <name>viewSessionsInBuilding()</name>
 <extent>
 <description>definition</description>
-<source_reference file="src\AttendantUI.cpp" line="63" />
+<source_reference file="src\AttendantUI.cpp" line="70" />
 </extent>
 <extent>
 <description>declaration</description>

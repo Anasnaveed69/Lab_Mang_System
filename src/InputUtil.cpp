@@ -22,6 +22,34 @@ int InputUtil::readInt(const string& prompt) {
     }
 }
 
+// Helper function to validate date
+static bool isValidDate(int year, int month, int day) {
+    // Check year range (reasonable range)
+    if (year < 2000 || year > 2100) {
+        return false;
+    }
+    
+    // Check month range
+    if (month < 1 || month > 12) {
+        return false;
+    }
+    
+    // Days in each month
+    int daysInMonth[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+    
+    // Check for leap year (simplified: divisible by 4)
+    if (month == 2 && (year % 4 == 0)) {
+        daysInMonth[1] = 29;
+    }
+    
+    // Check day range
+    if (day < 1 || day > daysInMonth[month - 1]) {
+        return false;
+    }
+    
+    return true;
+}
+
 Date InputUtil::readDate(const string& prompt) {
     Date date;
     while (true) {
@@ -32,9 +60,15 @@ Date InputUtil::readDate(const string& prompt) {
         char dash1, dash2;
         if (ss >> date.year >> dash1 >> date.month >> dash2 >> date.day && 
             dash1 == '-' && dash2 == '-' && ss.eof()) {
-            return date;
+            // Validate the date
+            if (isValidDate(date.year, date.month, date.day)) {
+                return date;
+            } else {
+                cout << "Invalid date! Please enter a valid date (e.g., 2024-02-28)." << endl;
+            }
+        } else {
+            cout << "Invalid date format. Please use YYYY-MM-DD." << endl;
         }
-        cout << "Invalid date format. Please use YYYY-MM-DD." << endl;
     }
 }
 

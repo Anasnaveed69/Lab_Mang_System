@@ -7,23 +7,29 @@ CCCC_ModExt@Building@class@include\Building.h@9@definition@F???2@LOC:7 COM:0 MVG
 CCCC_Module@Date@struct@
 CCCC_ModExt@Date@struct@include\LabSession.h@11@definition@F???0@LOC:5 COM:0 MVG:0@0@d@
 CCCC_Module@HeadOfDepartmentUI@class@
-CCCC_ModExt@HeadOfDepartmentUI@class@include\HeadOfDepartmentUI.h@4@definition@F???2@LOC:4 COM:0 MVG:0@2@d@
+CCCC_ModExt@HeadOfDepartmentUI@class@include\HeadOfDepartmentUI.h@13@definition@FT??2@LOC:4 COM:0 MVG:0@2@d@
 CCCC_Module@InputUtil@class@
 CCCC_ModExt@InputUtil@class@include\InputUtil.h@9@definition@FT??2@LOC:3 COM:0 MVG:0@2@d@
 CCCC_Module@Instructor@class@
 CCCC_ModExt@Instructor@class@include\Instructor.h@9@definition@F???2@LOC:8 COM:0 MVG:0@2@d@
+CCCC_ModExt@Instructor@class@include\HeadOfDepartmentUI.h@10@declaration@????2@LOC:1 COM:0 MVG:0@2@D@
 CCCC_Module@InstructorUI@class@
 CCCC_ModExt@InstructorUI@class@include\InstructorUI.h@7@definition@F???2@LOC:6 COM:0 MVG:0@2@d@
 CCCC_Module@LabSession@class@
 CCCC_ModExt@LabSession@class@include\LabSession.h@39@definition@F???2@LOC:10 COM:0 MVG:0@2@d@
+CCCC_ModExt@LabSession@class@include\HeadOfDepartmentUI.h@8@declaration@????2@LOC:1 COM:0 MVG:0@2@D@
 CCCC_Module@MainMenu@class@
 CCCC_ModExt@MainMenu@class@include\MainMenu.h@4@definition@F???2@LOC:3 COM:0 MVG:0@2@d@
 CCCC_Module@MakeupRequest@class@
 CCCC_ModExt@MakeupRequest@class@include\MakeupRequest.h@10@definition@F???2@LOC:12 COM:0 MVG:0@2@d@
 CCCC_Module@Room@class@
 CCCC_ModExt@Room@class@include\Room.h@9@definition@F???2@LOC:8 COM:0 MVG:0@2@d@
+CCCC_ModExt@Room@class@include\HeadOfDepartmentUI.h@11@declaration@????2@LOC:1 COM:0 MVG:0@2@D@
 CCCC_Module@Section@class@
 CCCC_ModExt@Section@class@include\Section.h@11@definition@F???2@LOC:11 COM:0 MVG:0@2@d@
+CCCC_ModExt@Section@class@include\HeadOfDepartmentUI.h@9@declaration@????2@LOC:1 COM:0 MVG:0@2@D@
+CCCC_Module@SessionDetails@struct@
+CCCC_ModExt@SessionDetails@struct@include\HeadOfDepartmentUI.h@24@definition@FT??0@LOC:5 COM:0 MVG:0@0@d@
 CCCC_Module@StorageManager@class@
 CCCC_ModExt@StorageManager@class@include\StorageManager.h@16@definition@FT??2@LOC:12 COM:0 MVG:0@2@d@
 CCCC_Module@TA@class@
@@ -98,13 +104,13 @@ CCCC_Member@AttendantUI@AttendantUI@@(const string &)@
 CCCC_MemExt@AttendantUI@AttendantUI@@(const string &)@src\AttendantUI.cpp@8@definition@F????@LOC:1 COM:0 MVG:0@?@d@
 CCCC_MemExt@AttendantUI@AttendantUI@@(const string &)@include\AttendantUI.h@11@declaration@F???0@LOC:1 COM:0 MVG:0@0@D@
 CCCC_Member@AttendantUI@fillTimesheet@@()@
-CCCC_MemExt@AttendantUI@fillTimesheet@@()@src\AttendantUI.cpp@26@definition@F????@LOC:36 COM:0 MVG:12@?@d@
+CCCC_MemExt@AttendantUI@fillTimesheet@@()@src\AttendantUI.cpp@26@definition@F????@LOC:40 COM:1 MVG:14@?@d@
 CCCC_MemExt@AttendantUI@fillTimesheet@@()@include\AttendantUI.h@14@declaration@F???2@LOC:1 COM:0 MVG:0@2@D@
 CCCC_Member@AttendantUI@showMenu@@()@
 CCCC_MemExt@AttendantUI@showMenu@@()@src\AttendantUI.cpp@10@definition@F????@LOC:15 COM:0 MVG:5@?@d@
 CCCC_MemExt@AttendantUI@showMenu@@()@include\AttendantUI.h@12@declaration@F???0@LOC:1 COM:0 MVG:0@0@D@
 CCCC_Member@AttendantUI@viewSessionsInBuilding@@()@
-CCCC_MemExt@AttendantUI@viewSessionsInBuilding@@()@src\AttendantUI.cpp@63@definition@F????@LOC:33 COM:0 MVG:11@?@d@
+CCCC_MemExt@AttendantUI@viewSessionsInBuilding@@()@src\AttendantUI.cpp@70@definition@F????@LOC:33 COM:0 MVG:11@?@d@
 CCCC_MemExt@AttendantUI@viewSessionsInBuilding@@()@include\AttendantUI.h@15@declaration@F???2@LOC:1 COM:0 MVG:0@2@D@
 CCCC_Member@Building@Building@@()@
 CCCC_MemExt@Building@Building@@()@src\Building.cpp@3@definition@F????@LOC:1 COM:0 MVG:0@?@d@
@@ -153,26 +159,35 @@ CCCC_Member@Date@operator ==@@(const Date &)@
 CCCC_MemExt@Date@operator ==@@(const Date &)@include\LabSession.h@18@definition@T???0@LOC:3 COM:0 MVG:3@0@d@
 CCCC_Member@Date@operator >>@@(istream &,Date &)@
 CCCC_MemExt@Date@operator >>@@(istream &,Date &)@include\LabSession.h@32@definition@F???0@LOC:5 COM:0 MVG:1@0@d@
+CCCC_Member@HeadOfDepartmentUI@findSectionById@@(const string &,vector &)@
+CCCC_MemExt@HeadOfDepartmentUI@findSectionById@@(const string &,vector &)@src\HeadOfDepartmentUI.cpp@27@definition@F????@LOC:8 COM:1 MVG:4@?@d@
+CCCC_MemExt@HeadOfDepartmentUI@findSectionById@@(const string &,vector &)@include\HeadOfDepartmentUI.h@23@declaration@FT??2@LOC:1 COM:0 MVG:0@2@D@
 CCCC_Member@HeadOfDepartmentUI@generateLabSectionTimesheet@@()@
-CCCC_MemExt@HeadOfDepartmentUI@generateLabSectionTimesheet@@()@src\HeadOfDepartmentUI.cpp@111@definition@F????@LOC:60 COM:0 MVG:8@?@d@
-CCCC_MemExt@HeadOfDepartmentUI@generateLabSectionTimesheet@@()@include\HeadOfDepartmentUI.h@10@declaration@F???2@LOC:1 COM:0 MVG:0@2@D@
+CCCC_MemExt@HeadOfDepartmentUI@generateLabSectionTimesheet@@()@src\HeadOfDepartmentUI.cpp@141@definition@F????@LOC:61 COM:0 MVG:8@?@d@
+CCCC_MemExt@HeadOfDepartmentUI@generateLabSectionTimesheet@@()@include\HeadOfDepartmentUI.h@19@declaration@F???2@LOC:1 COM:0 MVG:0@2@D@
 CCCC_Member@HeadOfDepartmentUI@generateWeeklySchedule@@()@
-CCCC_MemExt@HeadOfDepartmentUI@generateWeeklySchedule@@()@src\HeadOfDepartmentUI.cpp@28@definition@F????@LOC:38 COM:0 MVG:7@?@d@
-CCCC_MemExt@HeadOfDepartmentUI@generateWeeklySchedule@@()@include\HeadOfDepartmentUI.h@8@declaration@F???2@LOC:1 COM:0 MVG:0@2@D@
+CCCC_MemExt@HeadOfDepartmentUI@generateWeeklySchedule@@()@src\HeadOfDepartmentUI.cpp@69@definition@F????@LOC:29 COM:0 MVG:4@?@d@
+CCCC_MemExt@HeadOfDepartmentUI@generateWeeklySchedule@@()@include\HeadOfDepartmentUI.h@17@declaration@F???2@LOC:1 COM:0 MVG:0@2@D@
 CCCC_Member@HeadOfDepartmentUI@generateWeeklyTimesheet@@()@
-CCCC_MemExt@HeadOfDepartmentUI@generateWeeklyTimesheet@@()@src\HeadOfDepartmentUI.cpp@67@definition@F????@LOC:43 COM:0 MVG:8@?@d@
-CCCC_MemExt@HeadOfDepartmentUI@generateWeeklyTimesheet@@()@include\HeadOfDepartmentUI.h@9@declaration@F???2@LOC:1 COM:0 MVG:0@2@D@
+CCCC_MemExt@HeadOfDepartmentUI@generateWeeklyTimesheet@@()@src\HeadOfDepartmentUI.cpp@102@definition@F????@LOC:34 COM:0 MVG:5@?@d@
+CCCC_MemExt@HeadOfDepartmentUI@generateWeeklyTimesheet@@()@include\HeadOfDepartmentUI.h@18@declaration@F???2@LOC:1 COM:0 MVG:0@2@D@
+CCCC_Member@HeadOfDepartmentUI@getSessionDetails@@(const LabSession &,vector &)@
+CCCC_MemExt@HeadOfDepartmentUI@getSessionDetails@@(const LabSession &,vector &)@src\HeadOfDepartmentUI.cpp@37@definition@F????@LOC:13 COM:1 MVG:2@?@d@
+CCCC_MemExt@HeadOfDepartmentUI@getSessionDetails@@(const LabSession &,vector &)@include\HeadOfDepartmentUI.h@29@declaration@FT??0@LOC:1 COM:0 MVG:0@0@D@
 CCCC_Member@HeadOfDepartmentUI@showMenu@@()@
-CCCC_MemExt@HeadOfDepartmentUI@showMenu@@()@src\HeadOfDepartmentUI.cpp@10@definition@F????@LOC:17 COM:0 MVG:6@?@d@
-CCCC_MemExt@HeadOfDepartmentUI@showMenu@@()@include\HeadOfDepartmentUI.h@6@declaration@F???0@LOC:1 COM:0 MVG:0@0@D@
+CCCC_MemExt@HeadOfDepartmentUI@showMenu@@()@src\HeadOfDepartmentUI.cpp@51@definition@F????@LOC:17 COM:0 MVG:6@?@d@
+CCCC_MemExt@HeadOfDepartmentUI@showMenu@@()@include\HeadOfDepartmentUI.h@15@declaration@F???0@LOC:1 COM:0 MVG:0@0@D@
+CCCC_Member@HeadOfDepartmentUI@sortSessionsByDate@@(vector &)@
+CCCC_MemExt@HeadOfDepartmentUI@sortSessionsByDate@@(vector &)@src\HeadOfDepartmentUI.cpp@16@definition@F????@LOC:9 COM:1 MVG:5@?@d@
+CCCC_MemExt@HeadOfDepartmentUI@sortSessionsByDate@@(vector &)@include\HeadOfDepartmentUI.h@22@declaration@FT??2@LOC:1 COM:1 MVG:0@2@D@
 CCCC_Member@InputUtil@readBoolean@@(const string &)@
-CCCC_MemExt@InputUtil@readBoolean@@(const string &)@src\InputUtil.cpp@74@definition@F????@LOC:11 COM:0 MVG:11@?@d@
+CCCC_MemExt@InputUtil@readBoolean@@(const string &)@src\InputUtil.cpp@108@definition@FT???@LOC:11 COM:0 MVG:11@?@d@
 CCCC_MemExt@InputUtil@readBoolean@@(const string &)@include\InputUtil.h@16@declaration@FT??0@LOC:1 COM:0 MVG:0@0@D@
 CCCC_Member@InputUtil@readDate@@(const string &)@
-CCCC_MemExt@InputUtil@readDate@@(const string &)@src\InputUtil.cpp@25@definition@F????@LOC:15 COM:0 MVG:6@?@d@
+CCCC_MemExt@InputUtil@readDate@@(const string &)@src\InputUtil.cpp@53@definition@FT???@LOC:20 COM:1 MVG:7@?@d@
 CCCC_MemExt@InputUtil@readDate@@(const string &)@include\InputUtil.h@13@declaration@FT??0@LOC:1 COM:0 MVG:0@0@D@
 CCCC_Member@InputUtil@readDayOfWeek@@(const string &)@
-CCCC_MemExt@InputUtil@readDayOfWeek@@(const string &)@src\InputUtil.cpp@56@definition@F????@LOC:17 COM:0 MVG:4@?@d@
+CCCC_MemExt@InputUtil@readDayOfWeek@@(const string &)@src\InputUtil.cpp@90@definition@FT???@LOC:17 COM:0 MVG:4@?@d@
 CCCC_MemExt@InputUtil@readDayOfWeek@@(const string &)@include\InputUtil.h@15@declaration@FT??0@LOC:1 COM:0 MVG:0@0@D@
 CCCC_Member@InputUtil@readInt@@(const string &)@
 CCCC_MemExt@InputUtil@readInt@@(const string &)@src\InputUtil.cpp@11@definition@F????@LOC:13 COM:0 MVG:4@?@d@
@@ -181,7 +196,7 @@ CCCC_Member@InputUtil@readString@@(const string &)@
 CCCC_MemExt@InputUtil@readString@@(const string &)@src\InputUtil.cpp@4@definition@F????@LOC:6 COM:0 MVG:1@?@d@
 CCCC_MemExt@InputUtil@readString@@(const string &)@include\InputUtil.h@11@declaration@FT??0@LOC:1 COM:0 MVG:0@0@D@
 CCCC_Member@InputUtil@readTime@@(const string &)@
-CCCC_MemExt@InputUtil@readTime@@(const string &)@src\InputUtil.cpp@41@definition@F????@LOC:14 COM:0 MVG:5@?@d@
+CCCC_MemExt@InputUtil@readTime@@(const string &)@src\InputUtil.cpp@75@definition@FT???@LOC:14 COM:0 MVG:5@?@d@
 CCCC_MemExt@InputUtil@readTime@@(const string &)@include\InputUtil.h@14@declaration@FT??0@LOC:1 COM:0 MVG:0@0@D@
 CCCC_Member@Instructor@Instructor@@()@
 CCCC_MemExt@Instructor@Instructor@@()@src\Instructor.cpp@3@definition@F????@LOC:1 COM:0 MVG:0@?@d@
@@ -442,76 +457,76 @@ CCCC_Member@Section@setSemester@@(const string &)@
 CCCC_MemExt@Section@setSemester@@(const string &)@src\Section.cpp@59@definition@F????@LOC:3 COM:0 MVG:0@?@d@
 CCCC_MemExt@Section@setSemester@@(const string &)@include\Section.h@37@declaration@F???0@LOC:1 COM:0 MVG:0@0@D@
 CCCC_Member@StorageManager@ensureDataDir@@()@
-CCCC_MemExt@StorageManager@ensureDataDir@@()@src\StorageManager.cpp@19@definition@F????@LOC:4 COM:0 MVG:0@?@d@
+CCCC_MemExt@StorageManager@ensureDataDir@@()@src\StorageManager.cpp@20@definition@F????@LOC:4 COM:0 MVG:0@?@d@
 CCCC_MemExt@StorageManager@ensureDataDir@@()@include\StorageManager.h@26@declaration@FT??2@LOC:1 COM:0 MVG:0@2@D@
 CCCC_Member@StorageManager@findBuilding@@(const string &)@
-CCCC_MemExt@StorageManager@findBuilding@@(const string &)@src\StorageManager.cpp@61@definition@F????@LOC:11 COM:0 MVG:4@?@d@
+CCCC_MemExt@StorageManager@findBuilding@@(const string &)@src\StorageManager.cpp@104@definition@F????@LOC:11 COM:0 MVG:4@?@d@
 CCCC_MemExt@StorageManager@findBuilding@@(const string &)@include\StorageManager.h@31@declaration@FT??0@LOC:1 COM:0 MVG:0@0@D@
 CCCC_Member@StorageManager@findInstructor@@(const string &)@
-CCCC_MemExt@StorageManager@findInstructor@@(const string &)@src\StorageManager.cpp@164@definition@F????@LOC:11 COM:0 MVG:4@?@d@
+CCCC_MemExt@StorageManager@findInstructor@@(const string &)@src\StorageManager.cpp@207@definition@F????@LOC:11 COM:0 MVG:4@?@d@
 CCCC_MemExt@StorageManager@findInstructor@@(const string &)@include\StorageManager.h@38@declaration@FT??0@LOC:1 COM:0 MVG:0@0@D@
 CCCC_Member@StorageManager@findMakeupRequest@@(const string &)@
-CCCC_MemExt@StorageManager@findMakeupRequest@@(const string &)@src\StorageManager.cpp@372@definition@F????@LOC:11 COM:0 MVG:4@?@d@
+CCCC_MemExt@StorageManager@findMakeupRequest@@(const string &)@src\StorageManager.cpp@441@definition@F????@LOC:11 COM:0 MVG:4@?@d@
 CCCC_MemExt@StorageManager@findMakeupRequest@@(const string &)@include\StorageManager.h@51@declaration@FT??0@LOC:1 COM:0 MVG:0@0@D@
 CCCC_Member@StorageManager@findRoom@@(const string &)@
-CCCC_MemExt@StorageManager@findRoom@@(const string &)@src\StorageManager.cpp@107@definition@F????@LOC:11 COM:0 MVG:4@?@d@
+CCCC_MemExt@StorageManager@findRoom@@(const string &)@src\StorageManager.cpp@150@definition@F????@LOC:11 COM:0 MVG:4@?@d@
 CCCC_MemExt@StorageManager@findRoom@@(const string &)@include\StorageManager.h@34@declaration@FT??0@LOC:1 COM:0 MVG:0@0@D@
 CCCC_Member@StorageManager@findRoomsByBuilding@@(const string &)@
-CCCC_MemExt@StorageManager@findRoomsByBuilding@@(const string &)@src\StorageManager.cpp@119@definition@F????@LOC:10 COM:0 MVG:3@?@d@
+CCCC_MemExt@StorageManager@findRoomsByBuilding@@(const string &)@src\StorageManager.cpp@162@definition@F????@LOC:10 COM:0 MVG:3@?@d@
 CCCC_MemExt@StorageManager@findRoomsByBuilding@@(const string &)@include\StorageManager.h@35@declaration@FT??0@LOC:1 COM:0 MVG:0@0@D@
 CCCC_Member@StorageManager@findSection@@(const string &)@
-CCCC_MemExt@StorageManager@findSection@@(const string &)@src\StorageManager.cpp@256@definition@F????@LOC:11 COM:0 MVG:4@?@d@
+CCCC_MemExt@StorageManager@findSection@@(const string &)@src\StorageManager.cpp@299@definition@F????@LOC:11 COM:0 MVG:4@?@d@
 CCCC_MemExt@StorageManager@findSection@@(const string &)@include\StorageManager.h@44@declaration@FT??0@LOC:1 COM:0 MVG:0@0@D@
 CCCC_Member@StorageManager@findSessionsBySection@@(const string &)@
-CCCC_MemExt@StorageManager@findSessionsBySection@@(const string &)@src\StorageManager.cpp@302@definition@F????@LOC:10 COM:0 MVG:3@?@d@
+CCCC_MemExt@StorageManager@findSessionsBySection@@(const string &)@src\StorageManager.cpp@345@definition@F????@LOC:10 COM:0 MVG:3@?@d@
 CCCC_MemExt@StorageManager@findSessionsBySection@@(const string &)@include\StorageManager.h@47@declaration@FT??0@LOC:1 COM:0 MVG:0@0@D@
 CCCC_Member@StorageManager@findSessionsByWeek@@(const Date &)@
-CCCC_MemExt@StorageManager@findSessionsByWeek@@(const Date &)@src\StorageManager.cpp@313@definition@F????@LOC:24 COM:0 MVG:9@?@d@
+CCCC_MemExt@StorageManager@findSessionsByWeek@@(const Date &)@src\StorageManager.cpp@356@definition@F????@LOC:36 COM:9 MVG:11@?@d@
 CCCC_MemExt@StorageManager@findSessionsByWeek@@(const Date &)@include\StorageManager.h@48@declaration@FT??0@LOC:1 COM:0 MVG:0@0@D@
 CCCC_Member@StorageManager@findTA@@(const string &)@
-CCCC_MemExt@StorageManager@findTA@@(const string &)@src\StorageManager.cpp@210@definition@F????@LOC:11 COM:0 MVG:4@?@d@
+CCCC_MemExt@StorageManager@findTA@@(const string &)@src\StorageManager.cpp@253@definition@F????@LOC:11 COM:0 MVG:4@?@d@
 CCCC_MemExt@StorageManager@findTA@@(const string &)@include\StorageManager.h@41@declaration@FT??0@LOC:1 COM:0 MVG:0@0@D@
 CCCC_Member@StorageManager@loadBuildings@@()@
-CCCC_MemExt@StorageManager@loadBuildings@@()@src\StorageManager.cpp@45@definition@F????@LOC:15 COM:0 MVG:4@?@d@
+CCCC_MemExt@StorageManager@loadBuildings@@()@src\StorageManager.cpp@65@definition@F????@LOC:36 COM:2 MVG:12@?@d@
 CCCC_MemExt@StorageManager@loadBuildings@@()@include\StorageManager.h@30@declaration@FT??0@LOC:1 COM:0 MVG:0@0@D@
 CCCC_Member@StorageManager@loadInstructors@@()@
-CCCC_MemExt@StorageManager@loadInstructors@@()@src\StorageManager.cpp@148@definition@F????@LOC:15 COM:0 MVG:4@?@d@
+CCCC_MemExt@StorageManager@loadInstructors@@()@src\StorageManager.cpp@191@definition@F????@LOC:15 COM:0 MVG:4@?@d@
 CCCC_MemExt@StorageManager@loadInstructors@@()@include\StorageManager.h@37@declaration@FT??0@LOC:1 COM:0 MVG:0@0@D@
 CCCC_Member@StorageManager@loadMakeupRequests@@()@
-CCCC_MemExt@StorageManager@loadMakeupRequests@@()@src\StorageManager.cpp@356@definition@F????@LOC:15 COM:0 MVG:4@?@d@
+CCCC_MemExt@StorageManager@loadMakeupRequests@@()@src\StorageManager.cpp@425@definition@F????@LOC:15 COM:0 MVG:4@?@d@
 CCCC_MemExt@StorageManager@loadMakeupRequests@@()@include\StorageManager.h@50@declaration@FT??0@LOC:1 COM:0 MVG:0@0@D@
 CCCC_Member@StorageManager@loadRooms@@()@
-CCCC_MemExt@StorageManager@loadRooms@@()@src\StorageManager.cpp@91@definition@F????@LOC:15 COM:0 MVG:4@?@d@
+CCCC_MemExt@StorageManager@loadRooms@@()@src\StorageManager.cpp@134@definition@F????@LOC:15 COM:0 MVG:4@?@d@
 CCCC_MemExt@StorageManager@loadRooms@@()@include\StorageManager.h@33@declaration@FT??0@LOC:1 COM:0 MVG:0@0@D@
 CCCC_Member@StorageManager@loadSections@@()@
-CCCC_MemExt@StorageManager@loadSections@@()@src\StorageManager.cpp@240@definition@F????@LOC:15 COM:0 MVG:4@?@d@
+CCCC_MemExt@StorageManager@loadSections@@()@src\StorageManager.cpp@283@definition@F????@LOC:15 COM:0 MVG:4@?@d@
 CCCC_MemExt@StorageManager@loadSections@@()@include\StorageManager.h@43@declaration@FT??0@LOC:1 COM:0 MVG:0@0@D@
 CCCC_Member@StorageManager@loadSessions@@()@
-CCCC_MemExt@StorageManager@loadSessions@@()@src\StorageManager.cpp@286@definition@F????@LOC:15 COM:0 MVG:4@?@d@
+CCCC_MemExt@StorageManager@loadSessions@@()@src\StorageManager.cpp@329@definition@F????@LOC:15 COM:0 MVG:4@?@d@
 CCCC_MemExt@StorageManager@loadSessions@@()@include\StorageManager.h@46@declaration@FT??0@LOC:1 COM:0 MVG:0@0@D@
 CCCC_Member@StorageManager@loadTAs@@()@
-CCCC_MemExt@StorageManager@loadTAs@@()@src\StorageManager.cpp@194@definition@F????@LOC:15 COM:0 MVG:4@?@d@
+CCCC_MemExt@StorageManager@loadTAs@@()@src\StorageManager.cpp@237@definition@F????@LOC:15 COM:0 MVG:4@?@d@
 CCCC_MemExt@StorageManager@loadTAs@@()@include\StorageManager.h@40@declaration@FT??0@LOC:1 COM:0 MVG:0@0@D@
 CCCC_Member@StorageManager@saveBuilding@@(const Building &)@
-CCCC_MemExt@StorageManager@saveBuilding@@(const Building &)@src\StorageManager.cpp@27@definition@F????@LOC:17 COM:0 MVG:3@?@d@
+CCCC_MemExt@StorageManager@saveBuilding@@(const Building &)@src\StorageManager.cpp@28@definition@F????@LOC:36 COM:0 MVG:9@?@d@
 CCCC_MemExt@StorageManager@saveBuilding@@(const Building &)@include\StorageManager.h@29@declaration@FT??0@LOC:1 COM:0 MVG:0@0@D@
 CCCC_Member@StorageManager@saveInstructor@@(const Instructor &)@
-CCCC_MemExt@StorageManager@saveInstructor@@(const Instructor &)@src\StorageManager.cpp@130@definition@F????@LOC:17 COM:0 MVG:3@?@d@
+CCCC_MemExt@StorageManager@saveInstructor@@(const Instructor &)@src\StorageManager.cpp@173@definition@F????@LOC:17 COM:0 MVG:3@?@d@
 CCCC_MemExt@StorageManager@saveInstructor@@(const Instructor &)@include\StorageManager.h@36@declaration@FT??0@LOC:1 COM:0 MVG:0@0@D@
 CCCC_Member@StorageManager@saveMakeupRequest@@(const MakeupRequest &)@
-CCCC_MemExt@StorageManager@saveMakeupRequest@@(const MakeupRequest &)@src\StorageManager.cpp@338@definition@F????@LOC:17 COM:0 MVG:3@?@d@
+CCCC_MemExt@StorageManager@saveMakeupRequest@@(const MakeupRequest &)@src\StorageManager.cpp@407@definition@F????@LOC:17 COM:0 MVG:3@?@d@
 CCCC_MemExt@StorageManager@saveMakeupRequest@@(const MakeupRequest &)@include\StorageManager.h@49@declaration@FT??0@LOC:1 COM:0 MVG:0@0@D@
 CCCC_Member@StorageManager@saveRoom@@(const Room &)@
-CCCC_MemExt@StorageManager@saveRoom@@(const Room &)@src\StorageManager.cpp@73@definition@F????@LOC:17 COM:0 MVG:3@?@d@
+CCCC_MemExt@StorageManager@saveRoom@@(const Room &)@src\StorageManager.cpp@116@definition@F????@LOC:17 COM:0 MVG:3@?@d@
 CCCC_MemExt@StorageManager@saveRoom@@(const Room &)@include\StorageManager.h@32@declaration@FT??0@LOC:1 COM:0 MVG:0@0@D@
 CCCC_Member@StorageManager@saveSection@@(const Section &)@
-CCCC_MemExt@StorageManager@saveSection@@(const Section &)@src\StorageManager.cpp@222@definition@F????@LOC:17 COM:0 MVG:3@?@d@
+CCCC_MemExt@StorageManager@saveSection@@(const Section &)@src\StorageManager.cpp@265@definition@F????@LOC:17 COM:0 MVG:3@?@d@
 CCCC_MemExt@StorageManager@saveSection@@(const Section &)@include\StorageManager.h@42@declaration@FT??0@LOC:1 COM:0 MVG:0@0@D@
 CCCC_Member@StorageManager@saveSession@@(const LabSession &)@
-CCCC_MemExt@StorageManager@saveSession@@(const LabSession &)@src\StorageManager.cpp@268@definition@F????@LOC:17 COM:0 MVG:3@?@d@
+CCCC_MemExt@StorageManager@saveSession@@(const LabSession &)@src\StorageManager.cpp@311@definition@F????@LOC:17 COM:0 MVG:3@?@d@
 CCCC_MemExt@StorageManager@saveSession@@(const LabSession &)@include\StorageManager.h@45@declaration@FT??0@LOC:1 COM:0 MVG:0@0@D@
 CCCC_Member@StorageManager@saveTA@@(const TA &)@
-CCCC_MemExt@StorageManager@saveTA@@(const TA &)@src\StorageManager.cpp@176@definition@F????@LOC:17 COM:0 MVG:3@?@d@
+CCCC_MemExt@StorageManager@saveTA@@(const TA &)@src\StorageManager.cpp@219@definition@F????@LOC:17 COM:0 MVG:3@?@d@
 CCCC_MemExt@StorageManager@saveTA@@(const TA &)@include\StorageManager.h@39@declaration@FT??0@LOC:1 COM:0 MVG:0@0@D@
 CCCC_Member@TA@TA@@()@
 CCCC_MemExt@TA@TA@@()@src\TA.cpp@3@definition@F????@LOC:1 COM:0 MVG:0@?@d@
@@ -570,7 +585,7 @@ CCCC_Member@Timing@Timing@@(const Time &,const Time &)@
 CCCC_MemExt@Timing@Timing@@(const Time &,const Time &)@src\Timing.cpp@6@definition@F????@LOC:3 COM:0 MVG:0@?@d@
 CCCC_MemExt@Timing@Timing@@(const Time &,const Time &)@include\Timing.h@43@declaration@F???0@LOC:1 COM:0 MVG:0@0@D@
 CCCC_Member@Timing@deserialize@@(ifstream &)@
-CCCC_MemExt@Timing@deserialize@@(ifstream &)@src\Timing.cpp@71@definition@F????@LOC:12 COM:0 MVG:0@?@d@
+CCCC_MemExt@Timing@deserialize@@(ifstream &)@src\Timing.cpp@75@definition@F????@LOC:12 COM:0 MVG:0@?@d@
 CCCC_MemExt@Timing@deserialize@@(ifstream &)@include\Timing.h@55@declaration@F???0@LOC:1 COM:0 MVG:0@0@D@
 CCCC_Member@Timing@getActualEnd@@()@
 CCCC_MemExt@Timing@getActualEnd@@()@src\Timing.cpp@22@definition@T????@LOC:3 COM:0 MVG:1@?@d@
@@ -579,7 +594,7 @@ CCCC_Member@Timing@getActualStart@@()@
 CCCC_MemExt@Timing@getActualStart@@()@src\Timing.cpp@18@definition@T????@LOC:3 COM:0 MVG:1@?@d@
 CCCC_MemExt@Timing@getActualStart@@()@include\Timing.h@46@declaration@T???0@LOC:1 COM:0 MVG:0@0@D@
 CCCC_Member@Timing@getContactHours@@()@
-CCCC_MemExt@Timing@getContactHours@@()@src\Timing.cpp@48@definition@T????@LOC:9 COM:0 MVG:4@?@d@
+CCCC_MemExt@Timing@getContactHours@@()@src\Timing.cpp@48@definition@T????@LOC:12 COM:1 MVG:6@?@d@
 CCCC_MemExt@Timing@getContactHours@@()@include\Timing.h@53@declaration@T???0@LOC:1 COM:0 MVG:0@0@D@
 CCCC_Member@Timing@getExpectedEnd@@()@
 CCCC_MemExt@Timing@getExpectedEnd@@()@src\Timing.cpp@14@definition@T????@LOC:3 COM:0 MVG:1@?@d@
@@ -593,7 +608,7 @@ CCCC_MemExt@Timing@isFilled@@()@include\Timing.h@48@declaration@T???0@LOC:1 COM:
 CCCC_Member@Timing@operator <<@@(ostream &,const Timing &)@
 CCCC_MemExt@Timing@operator <<@@(ostream &,const Timing &)@include\Timing.h@56@declaration@F???0@LOC:1 COM:0 MVG:0@0@D@
 CCCC_Member@Timing@serialize@@(ofstream &)@
-CCCC_MemExt@Timing@serialize@@(ofstream &)@src\Timing.cpp@58@definition@T????@LOC:12 COM:0 MVG:0@?@d@
+CCCC_MemExt@Timing@serialize@@(ofstream &)@src\Timing.cpp@62@definition@T????@LOC:12 COM:0 MVG:0@?@d@
 CCCC_MemExt@Timing@serialize@@(ofstream &)@include\Timing.h@54@declaration@T???0@LOC:1 COM:0 MVG:0@0@D@
 CCCC_Member@Timing@setActualEnd@@(const Time &)@
 CCCC_MemExt@Timing@setActualEnd@@(const Time &)@src\Timing.cpp@43@definition@F????@LOC:4 COM:0 MVG:0@?@d@
@@ -609,6 +624,8 @@ CCCC_MemExt@Timing@setExpectedStart@@(const Time &)@src\Timing.cpp@30@definition
 CCCC_MemExt@Timing@setExpectedStart@@(const Time &)@include\Timing.h@49@declaration@F???0@LOC:1 COM:0 MVG:0@0@D@
 CCCC_Member@anonymous@generateRequestId@@()@
 CCCC_MemExt@anonymous@generateRequestId@@()@src\InstructorUI.cpp@11@definition@F????@LOC:5 COM:0 MVG:1@?@d@
+CCCC_Member@anonymous@isValidDate@@(int,int,int)@
+CCCC_MemExt@anonymous@isValidDate@@(int,int,int)@src\InputUtil.cpp@26@definition@FT???@LOC:16 COM:6 MVG:12@?@d@
 CCCC_Member@anonymous@main@@()@
 CCCC_MemExt@anonymous@main@@()@src\main.cpp@3@definition@F????@LOC:5 COM:0 MVG:1@?@d@
 CCCC_Member@anonymous@operator <<@@(ostream &,const Building &)@
@@ -626,7 +643,7 @@ CCCC_MemExt@anonymous@operator <<@@(ostream &,const Section &)@src\Section.cpp@1
 CCCC_Member@anonymous@operator <<@@(ostream &,const TA &)@
 CCCC_MemExt@anonymous@operator <<@@(ostream &,const TA &)@src\TA.cpp@71@definition@F????@LOC:4 COM:0 MVG:1@?@d@
 CCCC_Member@anonymous@operator <<@@(ostream &,const Timing &)@
-CCCC_MemExt@anonymous@operator <<@@(ostream &,const Timing &)@src\Timing.cpp@84@definition@F????@LOC:7 COM:0 MVG:2@?@d@
+CCCC_MemExt@anonymous@operator <<@@(ostream &,const Timing &)@src\Timing.cpp@88@definition@F????@LOC:7 COM:0 MVG:2@?@d@
 CCCC_UseRel@string@AttendantUI@
 CCCC_UseExt@string@AttendantUI@src\AttendantUI.cpp@8@pass by reference@?????@*@?@p@
 CCCC_UseExt@string@AttendantUI@include\AttendantUI.h@9@has by value@????2@LOC:0 COM:0 MVG:0@2@H@
@@ -655,13 +672,26 @@ CCCC_UseExt@string@Building@include\Building.h@17@pass by reference@F???0@*@0@p@
 CCCC_UseExt@string@Building@include\Building.h@21@pass by reference@F???0@*@0@p@
 CCCC_UseExt@string@Building@include\Building.h@22@pass by reference@F???0@*@0@p@
 CCCC_UseExt@string@Building@include\Building.h@23@pass by reference@F???0@*@0@p@
+CCCC_UseRel@LabSession@HeadOfDepartmentUI@
+CCCC_UseExt@LabSession@HeadOfDepartmentUI@src\HeadOfDepartmentUI.cpp@38@pass by reference@F????@*@?@p@
+CCCC_UseExt@LabSession@HeadOfDepartmentUI@include\HeadOfDepartmentUI.h@29@pass by reference@FT??0@*@0@p@
+CCCC_UseRel@string@HeadOfDepartmentUI@
+CCCC_UseExt@string@HeadOfDepartmentUI@src\HeadOfDepartmentUI.cpp@27@pass by reference@F????@*@?@p@
+CCCC_UseExt@string@HeadOfDepartmentUI@include\HeadOfDepartmentUI.h@23@pass by reference@FT??2@*@2@p@
+CCCC_UseRel@vector@HeadOfDepartmentUI@
+CCCC_UseExt@vector@HeadOfDepartmentUI@src\HeadOfDepartmentUI.cpp@16@pass by reference@?????@*@?@p@
+CCCC_UseExt@vector@HeadOfDepartmentUI@src\HeadOfDepartmentUI.cpp@27@pass by reference@F????@*@?@p@
+CCCC_UseExt@vector@HeadOfDepartmentUI@src\HeadOfDepartmentUI.cpp@38@pass by reference@F????@*@?@p@
+CCCC_UseExt@vector@HeadOfDepartmentUI@include\HeadOfDepartmentUI.h@22@pass by reference@FT??2@*@2@p@
+CCCC_UseExt@vector@HeadOfDepartmentUI@include\HeadOfDepartmentUI.h@23@pass by reference@FT??2@*@2@p@
+CCCC_UseExt@vector@HeadOfDepartmentUI@include\HeadOfDepartmentUI.h@29@pass by reference@FT??0@*@0@p@
 CCCC_UseRel@string@InputUtil@
 CCCC_UseExt@string@InputUtil@src\InputUtil.cpp@4@pass by reference@?????@*@?@p@
 CCCC_UseExt@string@InputUtil@src\InputUtil.cpp@11@pass by reference@F????@*@?@p@
-CCCC_UseExt@string@InputUtil@src\InputUtil.cpp@25@pass by reference@F????@*@?@p@
-CCCC_UseExt@string@InputUtil@src\InputUtil.cpp@41@pass by reference@F????@*@?@p@
-CCCC_UseExt@string@InputUtil@src\InputUtil.cpp@56@pass by reference@F????@*@?@p@
-CCCC_UseExt@string@InputUtil@src\InputUtil.cpp@74@pass by reference@F????@*@?@p@
+CCCC_UseExt@string@InputUtil@src\InputUtil.cpp@53@pass by reference@FT???@*@?@p@
+CCCC_UseExt@string@InputUtil@src\InputUtil.cpp@75@pass by reference@FT???@*@?@p@
+CCCC_UseExt@string@InputUtil@src\InputUtil.cpp@90@pass by reference@FT???@*@?@p@
+CCCC_UseExt@string@InputUtil@src\InputUtil.cpp@108@pass by reference@FT???@*@?@p@
 CCCC_UseExt@string@InputUtil@include\InputUtil.h@11@pass by reference@FT??0@*@0@p@
 CCCC_UseExt@string@InputUtil@include\InputUtil.h@12@pass by reference@FT??0@*@0@p@
 CCCC_UseExt@string@InputUtil@include\InputUtil.h@13@pass by reference@FT??0@*@0@p@
@@ -830,35 +860,35 @@ CCCC_UseExt@string@Section@include\Section.h@39@pass by reference@F???0@*@0@p@
 CCCC_UseRel@vector@Section@
 CCCC_UseExt@vector@Section@include\Section.h@17@has by value@????2@LOC:0 COM:0 MVG:0@2@H@
 CCCC_UseRel@Building@StorageManager@
-CCCC_UseExt@Building@StorageManager@src\StorageManager.cpp@27@pass by reference@F????@*@?@p@
+CCCC_UseExt@Building@StorageManager@src\StorageManager.cpp@28@pass by reference@F????@*@?@p@
 CCCC_UseExt@Building@StorageManager@include\StorageManager.h@29@pass by reference@FT??0@*@0@p@
 CCCC_UseRel@Instructor@StorageManager@
-CCCC_UseExt@Instructor@StorageManager@src\StorageManager.cpp@130@pass by reference@F????@*@?@p@
+CCCC_UseExt@Instructor@StorageManager@src\StorageManager.cpp@173@pass by reference@F????@*@?@p@
 CCCC_UseExt@Instructor@StorageManager@include\StorageManager.h@36@pass by reference@FT??0@*@0@p@
 CCCC_UseRel@LabSession@StorageManager@
-CCCC_UseExt@LabSession@StorageManager@src\StorageManager.cpp@268@pass by reference@F????@*@?@p@
+CCCC_UseExt@LabSession@StorageManager@src\StorageManager.cpp@311@pass by reference@F????@*@?@p@
 CCCC_UseExt@LabSession@StorageManager@include\StorageManager.h@45@pass by reference@FT??0@*@0@p@
 CCCC_UseRel@MakeupRequest@StorageManager@
-CCCC_UseExt@MakeupRequest@StorageManager@src\StorageManager.cpp@338@pass by reference@F????@*@?@p@
+CCCC_UseExt@MakeupRequest@StorageManager@src\StorageManager.cpp@407@pass by reference@F????@*@?@p@
 CCCC_UseExt@MakeupRequest@StorageManager@include\StorageManager.h@49@pass by reference@FT??0@*@0@p@
 CCCC_UseRel@Room@StorageManager@
-CCCC_UseExt@Room@StorageManager@src\StorageManager.cpp@73@pass by reference@F????@*@?@p@
+CCCC_UseExt@Room@StorageManager@src\StorageManager.cpp@116@pass by reference@F????@*@?@p@
 CCCC_UseExt@Room@StorageManager@include\StorageManager.h@32@pass by reference@FT??0@*@0@p@
 CCCC_UseRel@Section@StorageManager@
-CCCC_UseExt@Section@StorageManager@src\StorageManager.cpp@222@pass by reference@F????@*@?@p@
+CCCC_UseExt@Section@StorageManager@src\StorageManager.cpp@265@pass by reference@F????@*@?@p@
 CCCC_UseExt@Section@StorageManager@include\StorageManager.h@42@pass by reference@FT??0@*@0@p@
 CCCC_UseRel@TA@StorageManager@
-CCCC_UseExt@TA@StorageManager@src\StorageManager.cpp@176@pass by reference@F????@*@?@p@
+CCCC_UseExt@TA@StorageManager@src\StorageManager.cpp@219@pass by reference@F????@*@?@p@
 CCCC_UseExt@TA@StorageManager@include\StorageManager.h@39@pass by reference@FT??0@*@0@p@
 CCCC_UseRel@string@StorageManager@
-CCCC_UseExt@string@StorageManager@src\StorageManager.cpp@61@pass by reference@F????@*@?@p@
-CCCC_UseExt@string@StorageManager@src\StorageManager.cpp@107@pass by reference@F????@*@?@p@
-CCCC_UseExt@string@StorageManager@src\StorageManager.cpp@119@pass by reference@F????@*@?@p@
-CCCC_UseExt@string@StorageManager@src\StorageManager.cpp@164@pass by reference@F????@*@?@p@
-CCCC_UseExt@string@StorageManager@src\StorageManager.cpp@210@pass by reference@F????@*@?@p@
-CCCC_UseExt@string@StorageManager@src\StorageManager.cpp@256@pass by reference@F????@*@?@p@
-CCCC_UseExt@string@StorageManager@src\StorageManager.cpp@302@pass by reference@F????@*@?@p@
-CCCC_UseExt@string@StorageManager@src\StorageManager.cpp@372@pass by reference@F????@*@?@p@
+CCCC_UseExt@string@StorageManager@src\StorageManager.cpp@104@pass by reference@F????@*@?@p@
+CCCC_UseExt@string@StorageManager@src\StorageManager.cpp@150@pass by reference@F????@*@?@p@
+CCCC_UseExt@string@StorageManager@src\StorageManager.cpp@162@pass by reference@F????@*@?@p@
+CCCC_UseExt@string@StorageManager@src\StorageManager.cpp@207@pass by reference@F????@*@?@p@
+CCCC_UseExt@string@StorageManager@src\StorageManager.cpp@253@pass by reference@F????@*@?@p@
+CCCC_UseExt@string@StorageManager@src\StorageManager.cpp@299@pass by reference@F????@*@?@p@
+CCCC_UseExt@string@StorageManager@src\StorageManager.cpp@345@pass by reference@F????@*@?@p@
+CCCC_UseExt@string@StorageManager@src\StorageManager.cpp@441@pass by reference@F????@*@?@p@
 CCCC_UseExt@string@StorageManager@include\StorageManager.h@18@has by value@?T??2@LOC:0 COM:0 MVG:0@2@H@
 CCCC_UseExt@string@StorageManager@include\StorageManager.h@19@has by value@?T??2@LOC:0 COM:0 MVG:0@2@H@
 CCCC_UseExt@string@StorageManager@include\StorageManager.h@20@has by value@?T??2@LOC:0 COM:0 MVG:0@2@H@
@@ -908,10 +938,10 @@ CCCC_UseRel@bool@Timing@
 CCCC_UseExt@bool@Timing@include\Timing.h@38@has by value@F???2@LOC:0 COM:0 MVG:0@2@H@
 CCCC_UseExt@bool@Timing@include\Timing.h@39@has by value@F???2@LOC:0 COM:0 MVG:0@2@H@
 CCCC_UseRel@ifstream@Timing@
-CCCC_UseExt@ifstream@Timing@src\Timing.cpp@71@pass by reference@T????@*@?@p@
+CCCC_UseExt@ifstream@Timing@src\Timing.cpp@75@pass by reference@T????@*@?@p@
 CCCC_UseExt@ifstream@Timing@include\Timing.h@55@pass by reference@F???0@*@0@p@
 CCCC_UseRel@ofstream@Timing@
-CCCC_UseExt@ofstream@Timing@src\Timing.cpp@58@pass by reference@T????@*@?@p@
+CCCC_UseExt@ofstream@Timing@src\Timing.cpp@62@pass by reference@T????@*@?@p@
 CCCC_UseExt@ofstream@Timing@include\Timing.h@54@pass by reference@F???0@*@0@p@
 CCCC_UseRel@ostream@Timing@
 CCCC_UseExt@ostream@Timing@include\Timing.h@56@pass by reference@F???0@*@0@p@
@@ -924,7 +954,7 @@ CCCC_RejExt@src\Section.cpp@1@<file scope items>@F????@LOC:1 COM:0 MVG:0@?@r@
 CCCC_RejExt@src\LabSession.cpp@1@<file scope items>@F????@LOC:1 COM:0 MVG:0@?@r@
 CCCC_RejExt@src\MakeupRequest.cpp@1@<file scope items>@F????@LOC:1 COM:0 MVG:0@?@r@
 CCCC_RejExt@src\StorageManager.cpp@1@<file scope items>@F????@LOC:9 COM:0 MVG:0@?@r@
-CCCC_RejExt@src\InputUtil.cpp@1@<file scope items>@F????@LOC:1 COM:0 MVG:0@?@r@
+CCCC_RejExt@src\InputUtil.cpp@1@<file scope items>@FT???@LOC:1 COM:0 MVG:0@?@r@
 CCCC_RejExt@src\AcademicOfficerUI.cpp@1@<file scope items>@F????@LOC:2 COM:0 MVG:0@?@r@
 CCCC_RejExt@src\AttendantUI.cpp@1@<file scope items>@F????@LOC:2 COM:0 MVG:0@?@r@
 CCCC_RejExt@src\HeadOfDepartmentUI.cpp@1@<file scope items>@F????@LOC:2 COM:0 MVG:0@?@r@
@@ -943,6 +973,6 @@ CCCC_RejExt@include\StorageManager.h@1@<file scope items>@FT??2@LOC:2 COM:0 MVG:
 CCCC_RejExt@include\InputUtil.h@1@<file scope items>@FT??2@LOC:2 COM:0 MVG:0@2@r@
 CCCC_RejExt@include\AcademicOfficerUI.h@1@<file scope items>@F???2@LOC:1 COM:0 MVG:0@2@r@
 CCCC_RejExt@include\AttendantUI.h@1@<file scope items>@F???2@LOC:2 COM:0 MVG:0@2@r@
-CCCC_RejExt@include\HeadOfDepartmentUI.h@1@<file scope items>@F???2@LOC:1 COM:0 MVG:0@2@r@
+CCCC_RejExt@include\HeadOfDepartmentUI.h@1@<file scope items>@FT??2@LOC:2 COM:0 MVG:0@2@r@
 CCCC_RejExt@include\InstructorUI.h@1@<file scope items>@F???2@LOC:2 COM:0 MVG:0@2@r@
 CCCC_RejExt@include\MainMenu.h@1@<file scope items>@F???2@LOC:1 COM:0 MVG:0@2@r@

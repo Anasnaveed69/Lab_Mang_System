@@ -6,7 +6,9 @@ bin/
 # Data files
 data/
 
-
+# CCCC reports
+cccc_report/
+cccc_report_html/
 
 # IDE files
 .idea/
@@ -19,6 +21,7 @@ data/
 # OS files
 .DS_Store
 Thumbs.db
+*.exe
 
 # Build artifacts
 *.a

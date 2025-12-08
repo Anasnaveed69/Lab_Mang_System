@@ -2,15 +2,15 @@
 <!--Detailed report on module anonymous-->
 <CCCC_Project>
 <module_summary>
-<lines_of_code value="54" level="0" />
+<lines_of_code value="70" level="0" />
 <lines_of_code_per_member_function value="******" level="0" />
-<McCabes_cyclomatic_complexity value="14" level="0" />
+<McCabes_cyclomatic_complexity value="26" level="0" />
 <McCabes_cyclomatic_complexity_per_member_function value="******" level="2" />
-<lines_of_code value="0" level="0" />
-<lines_of_code_per_member_function value="********" level="0" />
-<lines_of_code_per_line_of_comment value="******" level="2" />
-<McCabes_cyclomatic_complexity_per_line_of_comment value="******" level="2" />
-<weighted_methods_per_class_unity value="10" level="0" />
+<lines_of_code value="6" level="0" />
+<lines_of_code_per_member_function value="********" level="2" />
+<lines_of_code_per_line_of_comment value="11.667" level="1" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="4.333" level="0" />
+<weighted_methods_per_class_unity value="11" level="0" />
 <weighted_methods_per_class_visibility value="0" level="0" />
 <depth_of_inheritance_tree value="0" level="0" />
 <number_of_children value="0" level="0" />
@@ -36,6 +36,18 @@
 <lines_of_comment value="0" level="0" />
 <lines_of_code_per_line_of_comment value="------" level="0" />
 <McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>isValidDate(int,int,int)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src\InputUtil.cpp" line="26" />
+</extent>
+<lines_of_code value="16" level="0" />
+<McCabes_cyclomatic_complexity value="12" level="1" />
+<lines_of_comment value="6" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="2.000" level="0" />
 </member_function>
 <member_function>
 <name>main()</name>
@@ -137,7 +149,7 @@
 <name>operator &lt;&lt;(ostream &amp;,const Timing &amp;)</name>
 <extent>
 <description>definition</description>
-<source_reference file="src\Timing.cpp" line="84" />
+<source_reference file="src\Timing.cpp" line="88" />
 </extent>
 <lines_of_code value="7" level="0" />
 <McCabes_cyclomatic_complexity value="2" level="0" />

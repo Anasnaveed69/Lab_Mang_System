@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--Report on software metrics-->
 <CCCC_Project>
-<timestamp>Sat Nov 22 19:18:44 2025
+<timestamp>Tue Dec 02 22:12:41 2025
 </timestamp>
 <project_summary>
 <number_of_modules value="23" level="0" />
-<lines_of_code value="1954" level="0" />
-<lines_of_code_per_module value="84.957" level="0" />
-<McCabes_cyclomatic_complexity value="319" level="0" />
-<McCabes_cyclomatic_complexity_per_module value="13.870" level="0" />
-<lines_of_comment value="0" level="0" />
-<lines_of_comment_per_module value="0.000" level="0" />
-<lines_of_code_per_line_of_comment value="******" level="2" />
-<McCabes_cyclomatic_complexity_per_line_of_comment value="******" level="2" />
-<IF4 value="166" level="0" />
-<IF4_per_module value="7.217" level="0" />
-<IF4_visible value="130" level="0" />
-<IF4_visible_per_module value="5.652" level="0" />
+<lines_of_code value="2060" level="0" />
+<lines_of_code_per_module value="89.565" level="0" />
+<McCabes_cyclomatic_complexity value="357" level="0" />
+<McCabes_cyclomatic_complexity_per_module value="15.522" level="0" />
+<lines_of_comment value="24" level="0" />
+<lines_of_comment_per_module value="1.043" level="0" />
+<lines_of_code_per_line_of_comment value="85.833" level="2" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="14.875" level="2" />
+<IF4 value="274" level="0" />
+<IF4_per_module value="11.913" level="0" />
+<IF4_visible value="205" level="0" />
+<IF4_visible_per_module value="8.913" level="0" />
 <IF4_concrete value="1" level="0" />
 <IF4_concrete value="0.043" level="0" />
-<rejected_lines_of_code value="55" level="0" />
+<rejected_lines_of_code value="56" level="0" />
 </project_summary>
 <procedural_summary>
 <module>
@@ -32,11 +32,11 @@
 </module>
 <module>
 <name>AttendantUI</name>
-<lines_of_code value="95" level="0" />
-<McCabes_cyclomatic_complexity value="28" level="0" />
-<lines_of_comment value="0" level="0" />
-<lines_of_code_per_line_of_comment value="******" level="2" />
-<McCabes_cyclomatic_complexity_per_line_of_comment value="******" level="2" />
+<lines_of_code value="99" level="0" />
+<McCabes_cyclomatic_complexity value="30" level="0" />
+<lines_of_comment value="1" level="0" />
+<lines_of_code_per_line_of_comment value="99.000" level="2" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="30.000" level="2" />
 </module>
 <module>
 <name>Building</name>
@@ -48,23 +48,23 @@
 </module>
 <module>
 <name>HeadOfDepartmentUI</name>
-<lines_of_code value="166" level="0" />
-<McCabes_cyclomatic_complexity value="29" level="0" />
-<lines_of_comment value="0" level="0" />
-<lines_of_code_per_line_of_comment value="******" level="2" />
-<McCabes_cyclomatic_complexity_per_line_of_comment value="******" level="2" />
+<lines_of_code value="182" level="0" />
+<McCabes_cyclomatic_complexity value="34" level="0" />
+<lines_of_comment value="4" level="0" />
+<lines_of_code_per_line_of_comment value="45.500" level="2" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="8.500" level="1" />
 </module>
 <module>
 <name>InputUtil</name>
-<lines_of_code value="85" level="0" />
-<McCabes_cyclomatic_complexity value="31" level="0" />
-<lines_of_comment value="0" level="0" />
-<lines_of_code_per_line_of_comment value="******" level="2" />
-<McCabes_cyclomatic_complexity_per_line_of_comment value="******" level="2" />
+<lines_of_code value="90" level="0" />
+<McCabes_cyclomatic_complexity value="32" level="0" />
+<lines_of_comment value="1" level="0" />
+<lines_of_code_per_line_of_comment value="90.000" level="2" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="32.000" level="2" />
 </module>
 <module>
 <name>Instructor</name>
-<lines_of_code value="77" level="0" />
+<lines_of_code value="78" level="0" />
 <McCabes_cyclomatic_complexity value="4" level="0" />
 <lines_of_comment value="0" level="0" />
 <lines_of_code_per_line_of_comment value="******" level="2" />
@@ -80,7 +80,7 @@
 </module>
 <module>
 <name>LabSession</name>
-<lines_of_code value="97" level="0" />
+<lines_of_code value="98" level="0" />
 <McCabes_cyclomatic_complexity value="7" level="0" />
 <lines_of_comment value="0" level="0" />
 <lines_of_code_per_line_of_comment value="******" level="2" />
@@ -104,7 +104,7 @@
 </module>
 <module>
 <name>Room</name>
-<lines_of_code value="73" level="0" />
+<lines_of_code value="74" level="0" />
 <McCabes_cyclomatic_complexity value="4" level="0" />
 <lines_of_comment value="0" level="0" />
 <lines_of_code_per_line_of_comment value="******" level="2" />
@@ -112,7 +112,7 @@
 </module>
 <module>
 <name>Section</name>
-<lines_of_code value="143" level="0" />
+<lines_of_code value="144" level="0" />
 <McCabes_cyclomatic_complexity value="10" level="0" />
 <lines_of_comment value="0" level="0" />
 <lines_of_code_per_line_of_comment value="******" level="2" />
@@ -120,11 +120,11 @@
 </module>
 <module>
 <name>StorageManager</name>
-<lines_of_code value="374" level="0" />
-<McCabes_cyclomatic_complexity value="88" level="0" />
-<lines_of_comment value="0" level="0" />
-<lines_of_code_per_line_of_comment value="******" level="2" />
-<McCabes_cyclomatic_complexity_per_line_of_comment value="******" level="2" />
+<lines_of_code value="426" level="0" />
+<McCabes_cyclomatic_complexity value="104" level="0" />
+<lines_of_comment value="11" level="0" />
+<lines_of_code_per_line_of_comment value="38.727" level="2" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="9.455" level="1" />
 </module>
 <module>
 <name>TA</name>
@@ -136,19 +136,19 @@
 </module>
 <module>
 <name>Timing</name>
-<lines_of_code value="92" level="0" />
-<McCabes_cyclomatic_complexity value="10" level="0" />
-<lines_of_comment value="0" level="0" />
-<lines_of_code_per_line_of_comment value="******" level="2" />
-<McCabes_cyclomatic_complexity_per_line_of_comment value="******" level="2" />
+<lines_of_code value="95" level="0" />
+<McCabes_cyclomatic_complexity value="12" level="0" />
+<lines_of_comment value="1" level="0" />
+<lines_of_code_per_line_of_comment value="95.000" level="2" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="12.000" level="2" />
 </module>
 <module>
 <name>anonymous</name>
-<lines_of_code value="54" level="0" />
-<McCabes_cyclomatic_complexity value="14" level="0" />
-<lines_of_comment value="0" level="0" />
-<lines_of_code_per_line_of_comment value="******" level="2" />
-<McCabes_cyclomatic_complexity_per_line_of_comment value="******" level="2" />
+<lines_of_code value="70" level="0" />
+<McCabes_cyclomatic_complexity value="26" level="0" />
+<lines_of_comment value="6" level="0" />
+<lines_of_code_per_line_of_comment value="11.667" level="1" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="4.333" level="0" />
 </module>
 <module>
 <name>bool</name>
@@ -234,11 +234,11 @@
 </module>
 <module>
 <name>HeadOfDepartmentUI</name>
-<weighted_methods_per_class_unity value="4" level="0" />
-<weighted_methods_per_class_visibility value="1" level="0" />
+<weighted_methods_per_class_unity value="7" level="0" />
+<weighted_methods_per_class_visibility value="2" level="0" />
 <depth_of_inheritance_tree value="0" level="0" />
 <number_of_children value="0" level="0" />
-<coupling_between_objects value="0" level="0" />
+<coupling_between_objects value="3" level="0" />
 </module>
 <module>
 <name>InputUtil</name>
@@ -270,7 +270,7 @@
 <weighted_methods_per_class_visibility value="15" level="1" />
 <depth_of_inheritance_tree value="0" level="0" />
 <number_of_children value="0" level="0" />
-<coupling_between_objects value="7" level="0" />
+<coupling_between_objects value="8" level="0" />
 </module>
 <module>
 <name>MainMenu</name>
@@ -330,7 +330,7 @@
 </module>
 <module>
 <name>anonymous</name>
-<weighted_methods_per_class_unity value="10" level="0" />
+<weighted_methods_per_class_unity value="11" level="0" />
 <weighted_methods_per_class_visibility value="0" level="0" />
 <depth_of_inheritance_tree value="0" level="0" />
 <number_of_children value="0" level="0" />
@@ -382,7 +382,7 @@
 <weighted_methods_per_class_visibility value="0" level="0" />
 <depth_of_inheritance_tree value="0" level="0" />
 <number_of_children value="0" level="0" />
-<coupling_between_objects value="11" level="0" />
+<coupling_between_objects value="12" level="0" />
 </module>
 <module>
 <name>vector</name>
@@ -390,7 +390,7 @@
 <weighted_methods_per_class_visibility value="0" level="0" />
 <depth_of_inheritance_tree value="0" level="0" />
 <number_of_children value="0" level="0" />
-<coupling_between_objects value="1" level="0" />
+<coupling_between_objects value="2" level="0" />
 </module>
 </oo_design>
 <structural_summary>
@@ -435,9 +435,9 @@
 <fan_out_visible value="0" level="0" />
 <fan_out_concrete value="0" level="0" />
 <fan_out value="0" level="0" />
-<fan_in_visible value="0" level="0" />
+<fan_in_visible value="2" level="0" />
 <fan_in_concrete value="0" level="0" />
-<fan_in value="0" level="0" />
+<fan_in value="3" level="0" />
 <IF4_visible value="0" level="0" />
 <IF4_concrete value="0" level="0" />
 <IF4 value="0" level="0" />
@@ -480,15 +480,15 @@
 </module>
 <module>
 <name>LabSession</name>
-<fan_out_visible value="1" level="0" />
+<fan_out_visible value="2" level="0" />
 <fan_out_concrete value="0" level="0" />
-<fan_out value="1" level="0" />
+<fan_out value="2" level="0" />
 <fan_in_visible value="5" level="0" />
 <fan_in_concrete value="3" level="0" />
 <fan_in value="6" level="0" />
-<IF4_visible value="25" level="0" />
+<IF4_visible value="100" level="1" />
 <IF4_concrete value="0" level="0" />
-<IF4 value="36" level="0" />
+<IF4 value="144" level="1" />
 </module>
 <module>
 <name>MainMenu</name>
@@ -650,7 +650,7 @@
 <name>string</name>
 <fan_out_visible value="11" level="1" />
 <fan_out_concrete value="10" level="1" />
-<fan_out value="11" level="0" />
+<fan_out value="12" level="0" />
 <fan_in_visible value="0" level="0" />
 <fan_in_concrete value="0" level="0" />
 <fan_in value="0" level="0" />
@@ -660,9 +660,9 @@
 </module>
 <module>
 <name>vector</name>
-<fan_out_visible value="0" level="0" />
+<fan_out_visible value="1" level="0" />
 <fan_out_concrete value="1" level="0" />
-<fan_out value="1" level="0" />
+<fan_out value="2" level="0" />
 <fan_in_visible value="0" level="0" />
 <fan_in_concrete value="0" level="0" />
 <fan_in value="0" level="0" />
@@ -871,7 +871,7 @@
 <rejected_extent>
 <name>&lt;file scope items&gt;</name>
 <source_reference file="include\HeadOfDepartmentUI.h" line="1" />
-<lines_of_code value="1" level="0" />
+<lines_of_code value="2" level="0" />
 <lines_of_comment value="0" level="0" />
 <McCabes_cyclomatic_complexity value="0" level="0" />
 </rejected_extent>

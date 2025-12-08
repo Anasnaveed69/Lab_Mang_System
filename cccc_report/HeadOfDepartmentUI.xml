@@ -2,19 +2,19 @@
 <!--Detailed report on module HeadOfDepartmentUI-->
 <CCCC_Project>
 <module_summary>
-<lines_of_code value="166" level="0" />
+<lines_of_code value="182" level="0" />
 <lines_of_code_per_member_function value="******" level="0" />
-<McCabes_cyclomatic_complexity value="29" level="0" />
+<McCabes_cyclomatic_complexity value="34" level="0" />
 <McCabes_cyclomatic_complexity_per_member_function value="******" level="2" />
-<lines_of_code value="0" level="0" />
-<lines_of_code_per_member_function value="********" level="0" />
-<lines_of_code_per_line_of_comment value="******" level="2" />
-<McCabes_cyclomatic_complexity_per_line_of_comment value="******" level="2" />
-<weighted_methods_per_class_unity value="4" level="0" />
-<weighted_methods_per_class_visibility value="1" level="0" />
+<lines_of_code value="4" level="0" />
+<lines_of_code_per_member_function value="********" level="2" />
+<lines_of_code_per_line_of_comment value="45.500" level="2" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="8.500" level="1" />
+<weighted_methods_per_class_unity value="7" level="0" />
+<weighted_methods_per_class_visibility value="2" level="0" />
 <depth_of_inheritance_tree value="0" level="0" />
 <number_of_children value="0" level="0" />
-<coupling_between_objects value="0" level="0" />
+<coupling_between_objects value="3" level="0" />
 <IF4 value="0" level="0" />
 <IF4_per_member_function value="********" level="0" />
 <IF4_visible value="0" level="0" />
@@ -24,7 +24,7 @@
 </module_summary>
 <module_detail>
 <description>definition</description>
-<source_reference file="include\HeadOfDepartmentUI.h" line="4" />
+<source_reference file="include\HeadOfDepartmentUI.h" line="13" />
 <lines_of_code value="4" level="0" />
 <McCabes_cyclomatic_complexity value="0" level="0" />
 <lines_of_comment value="0" level="0" />
@@ -33,16 +33,32 @@
 </module_detail>
 <procedural_detail>
 <member_function>
-<name>generateLabSectionTimesheet()</name>
+<name>findSectionById(const string &amp;,vector &amp;)</name>
 <extent>
 <description>definition</description>
-<source_reference file="src\HeadOfDepartmentUI.cpp" line="111" />
+<source_reference file="src\HeadOfDepartmentUI.cpp" line="27" />
 </extent>
 <extent>
 <description>declaration</description>
-<source_reference file="include\HeadOfDepartmentUI.h" line="10" />
+<source_reference file="include\HeadOfDepartmentUI.h" line="23" />
 </extent>
-<lines_of_code value="61" level="1" />
+<lines_of_code value="9" level="0" />
+<McCabes_cyclomatic_complexity value="4" level="0" />
+<lines_of_comment value="1" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+</member_function>
+<member_function>
+<name>generateLabSectionTimesheet()</name>
+<extent>
+<description>definition</description>
+<source_reference file="src\HeadOfDepartmentUI.cpp" line="141" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include\HeadOfDepartmentUI.h" line="19" />
+</extent>
+<lines_of_code value="62" level="1" />
 <McCabes_cyclomatic_complexity value="8" level="0" />
 <lines_of_comment value="0" level="0" />
 <lines_of_code_per_line_of_comment value="******" level="2" />
@@ -52,49 +68,81 @@
 <name>generateWeeklySchedule()</name>
 <extent>
 <description>definition</description>
-<source_reference file="src\HeadOfDepartmentUI.cpp" line="28" />
+<source_reference file="src\HeadOfDepartmentUI.cpp" line="69" />
 </extent>
 <extent>
 <description>declaration</description>
-<source_reference file="include\HeadOfDepartmentUI.h" line="8" />
+<source_reference file="include\HeadOfDepartmentUI.h" line="17" />
 </extent>
-<lines_of_code value="39" level="1" />
-<McCabes_cyclomatic_complexity value="7" level="0" />
+<lines_of_code value="30" level="0" />
+<McCabes_cyclomatic_complexity value="4" level="0" />
 <lines_of_comment value="0" level="0" />
 <lines_of_code_per_line_of_comment value="******" level="2" />
-<McCabes_cyclomatic_complexity_per_line_of_comment value="******" level="2" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
 </member_function>
 <member_function>
 <name>generateWeeklyTimesheet()</name>
 <extent>
 <description>definition</description>
-<source_reference file="src\HeadOfDepartmentUI.cpp" line="67" />
+<source_reference file="src\HeadOfDepartmentUI.cpp" line="102" />
 </extent>
 <extent>
 <description>declaration</description>
-<source_reference file="include\HeadOfDepartmentUI.h" line="9" />
+<source_reference file="include\HeadOfDepartmentUI.h" line="18" />
 </extent>
-<lines_of_code value="44" level="1" />
-<McCabes_cyclomatic_complexity value="8" level="0" />
+<lines_of_code value="35" level="1" />
+<McCabes_cyclomatic_complexity value="5" level="0" />
 <lines_of_comment value="0" level="0" />
 <lines_of_code_per_line_of_comment value="******" level="2" />
-<McCabes_cyclomatic_complexity_per_line_of_comment value="******" level="2" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="******" level="0" />
+</member_function>
+<member_function>
+<name>getSessionDetails(const LabSession &amp;,vector &amp;)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src\HeadOfDepartmentUI.cpp" line="37" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include\HeadOfDepartmentUI.h" line="29" />
+</extent>
+<lines_of_code value="14" level="0" />
+<McCabes_cyclomatic_complexity value="2" level="0" />
+<lines_of_comment value="1" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
 </member_function>
 <member_function>
 <name>showMenu()</name>
 <extent>
 <description>definition</description>
-<source_reference file="src\HeadOfDepartmentUI.cpp" line="10" />
+<source_reference file="src\HeadOfDepartmentUI.cpp" line="51" />
 </extent>
 <extent>
 <description>declaration</description>
-<source_reference file="include\HeadOfDepartmentUI.h" line="6" />
+<source_reference file="include\HeadOfDepartmentUI.h" line="15" />
 </extent>
 <lines_of_code value="18" level="0" />
 <McCabes_cyclomatic_complexity value="6" level="0" />
 <lines_of_comment value="0" level="0" />
 <lines_of_code_per_line_of_comment value="------" level="0" />
 <McCabes_cyclomatic_complexity_per_line_of_comment value="******" level="2" />
+</member_function>
+<member_function>
+<name>sortSessionsByDate(vector &amp;)</name>
+<extent>
+<description>definition</description>
+<source_reference file="src\HeadOfDepartmentUI.cpp" line="16" />
+</extent>
+<extent>
+<description>declaration</description>
+<source_reference file="include\HeadOfDepartmentUI.h" line="22" />
+</extent>
+<lines_of_code value="10" level="0" />
+<McCabes_cyclomatic_complexity value="5" level="0" />
+<lines_of_comment value="2" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="2.500" level="0" />
 </member_function>
 </procedural_detail>
 <structural_detail>
@@ -103,6 +151,55 @@
 <client_module>
 </client_module>
 <supplier_module>
+<name>LabSession</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src\HeadOfDepartmentUI.cpp" line="38" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\HeadOfDepartmentUI.h" line="29" />
+</extent>
+<name>string</name>
+<visible>false</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src\HeadOfDepartmentUI.cpp" line="27" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\HeadOfDepartmentUI.h" line="23" />
+</extent>
+<name>vector</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src\HeadOfDepartmentUI.cpp" line="16" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src\HeadOfDepartmentUI.cpp" line="27" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src\HeadOfDepartmentUI.cpp" line="38" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\HeadOfDepartmentUI.h" line="22" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\HeadOfDepartmentUI.h" line="23" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\HeadOfDepartmentUI.h" line="29" />
+</extent>
 </supplier_module>
 </module>
 </structural_detail>

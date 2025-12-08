@@ -2,7 +2,7 @@
 <!--Detailed report on module Section-->
 <CCCC_Project>
 <module_summary>
-<lines_of_code value="143" level="0" />
+<lines_of_code value="144" level="0" />
 <lines_of_code_per_member_function value="******" level="0" />
 <McCabes_cyclomatic_complexity value="10" level="0" />
 <McCabes_cyclomatic_complexity_per_member_function value="******" level="2" />
@@ -26,6 +26,13 @@
 <description>definition</description>
 <source_reference file="include\Section.h" line="11" />
 <lines_of_code value="11" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+<description>declaration</description>
+<source_reference file="include\HeadOfDepartmentUI.h" line="9" />
+<lines_of_code value="1" level="0" />
 <McCabes_cyclomatic_complexity value="0" level="0" />
 <lines_of_comment value="0" level="0" />
 <lines_of_code_per_line_of_comment value="------" level="0" />
@@ -358,7 +365,7 @@
 <concrete>false</concrete>
 <extent>
 <description>pass by reference</description>
-<source_reference file="src\StorageManager.cpp" line="222" />
+<source_reference file="src\StorageManager.cpp" line="265" />
 </extent>
 <extent>
 <description>pass by reference</description>

@@ -2,7 +2,7 @@
 <!--Detailed report on module LabSession-->
 <CCCC_Project>
 <module_summary>
-<lines_of_code value="97" level="0" />
+<lines_of_code value="98" level="0" />
 <lines_of_code_per_member_function value="******" level="0" />
 <McCabes_cyclomatic_complexity value="7" level="0" />
 <McCabes_cyclomatic_complexity_per_member_function value="******" level="2" />
@@ -14,10 +14,10 @@
 <weighted_methods_per_class_visibility value="15" level="0" />
 <depth_of_inheritance_tree value="0" level="0" />
 <number_of_children value="0" level="0" />
-<coupling_between_objects value="7" level="0" />
-<IF4 value="36" level="0" />
+<coupling_between_objects value="8" level="0" />
+<IF4 value="144" level="1" />
 <IF4_per_member_function value="********" level="2" />
-<IF4_visible value="25" level="0" />
+<IF4_visible value="100" level="1" />
 <IF4_visible_per_member_function value="********" level="2" />
 <IF4_concrete value="0" level="0" />
 <IF4_concrete_per_member_function value="********" level="0" />
@@ -26,6 +26,13 @@
 <description>definition</description>
 <source_reference file="include\LabSession.h" line="39" />
 <lines_of_code value="10" level="0" />
+<McCabes_cyclomatic_complexity value="0" level="0" />
+<lines_of_comment value="0" level="0" />
+<lines_of_code_per_line_of_comment value="------" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+<description>declaration</description>
+<source_reference file="include\HeadOfDepartmentUI.h" line="8" />
+<lines_of_code value="1" level="0" />
 <McCabes_cyclomatic_complexity value="0" level="0" />
 <lines_of_comment value="0" level="0" />
 <lines_of_code_per_line_of_comment value="------" level="0" />
@@ -281,12 +288,23 @@
 <module>
 <name>LabSession</name>
 <client_module>
+<name>HeadOfDepartmentUI</name>
+<visible>true</visible>
+<concrete>false</concrete>
+<extent>
+<description>pass by reference</description>
+<source_reference file="src\HeadOfDepartmentUI.cpp" line="38" />
+</extent>
+<extent>
+<description>pass by reference</description>
+<source_reference file="include\HeadOfDepartmentUI.h" line="29" />
+</extent>
 <name>StorageManager</name>
 <visible>true</visible>
 <concrete>false</concrete>
 <extent>
 <description>pass by reference</description>
-<source_reference file="src\StorageManager.cpp" line="268" />
+<source_reference file="src\StorageManager.cpp" line="311" />
 </extent>
 <extent>
 <description>pass by reference</description>

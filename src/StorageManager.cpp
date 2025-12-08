@@ -1,5 +1,6 @@
 #include "../include/StorageManager.h"
 #include <algorithm>
+#include <iostream>
 #ifdef _WIN32
 #include <direct.h>
 #else
@@ -32,28 +33,70 @@ void StorageManager::saveBuilding(const Building& building) {
         buildings.end());
     buildings.push_back(building);
     ofstream out(BUILDINGS_FILE, ios::binary);
-    if (out.is_open()) {
+    if (!out.is_open()) {
+        cerr << "Error: Could not open file for writing: " << BUILDINGS_FILE << endl;
+        return;
+    }
+    try {
         size_t count = buildings.size();
         out.write(reinterpret_cast<const char*>(&count), sizeof(count));
+        if (!out.good()) {
+            cerr << "Error: Failed to write count to file." << endl;
+            out.close();
+            return;
+        }
         for (const auto& b : buildings) {
             b.serialize(out);
+            if (!out.good()) {
+                cerr << "Error: Failed to write building data to file." << endl;
+                out.close();
+                return;
+            }
         }
         out.close();
+    } catch (...) {
+        cerr << "Error: Exception occurred while writing to file." << endl;
+        if (out.is_open()) {
+            out.close();
+        }
     }
 }
 
 vector<Building> StorageManager::loadBuildings() {
     vector<Building> buildings;
     ifstream in(BUILDINGS_FILE, ios::binary);
-    if (in.is_open() && in.peek() != ifstream::traits_type::eof()) {
+    if (!in.is_open()) {
+        // File doesn't exist yet, return empty vector
+        return buildings;
+    }
+    if (in.peek() == ifstream::traits_type::eof()) {
+        // Empty file
+        in.close();
+        return buildings;
+    }
+    try {
         size_t count;
         in.read(reinterpret_cast<char*>(&count), sizeof(count));
+        if (!in.good()) {
+            cerr << "Warning: Could not read count from file: " << BUILDINGS_FILE << endl;
+            in.close();
+            return buildings;
+        }
         for (size_t i = 0; i < count; i++) {
             Building b;
             b.deserialize(in);
+            if (!in.good() && i < count - 1) {
+                cerr << "Warning: Error reading building data from file." << endl;
+                break;
+            }
             buildings.push_back(b);
         }
         in.close();
+    } catch (...) {
+        cerr << "Error: Exception occurred while reading from file: " << BUILDINGS_FILE << endl;
+        if (in.is_open()) {
+            in.close();
+        }
     }
     return buildings;
 }
@@ -349,19 +392,12 @@ vector<LabSession> StorageManager::findSessionsByWeek(const Date& weekStart) {
     }
     
     // Find all sessions within the week (inclusive: >= weekStart and <= weekEnd)
+    // Use Date's built-in comparison operators for cleaner code
     for (const auto& s : allSessions) {
         Date sessionDate = s.getDate();
-        // Check if session date is within the week range
+        // Check if session date is within the week range (inclusive)
         // sessionDate >= weekStart AND sessionDate <= weekEnd
-        bool isAfterStart = (sessionDate.year > weekStart.year) ||
-                           (sessionDate.year == weekStart.year && sessionDate.month > weekStart.month) ||
-                           (sessionDate.year == weekStart.year && sessionDate.month == weekStart.month && sessionDate.day >= weekStart.day);
-        
-        bool isBeforeEnd = (sessionDate.year < weekEnd.year) ||
-                          (sessionDate.year == weekEnd.year && sessionDate.month < weekEnd.month) ||
-                          (sessionDate.year == weekEnd.year && sessionDate.month == weekEnd.month && sessionDate.day <= weekEnd.day);
-        
-        if (isAfterStart && isBeforeEnd) {
+        if (!(sessionDate < weekStart) && (sessionDate < weekEnd || sessionDate == weekEnd)) {
             result.push_back(s);
         }
     }

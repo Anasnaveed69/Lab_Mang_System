@@ -9,7 +9,7 @@ using namespace std;
 
 void MainMenu::showMainMenu() {
     while (true) {
-        cout << "\n=== Labs Management System ===" << endl;
+        cout << "\n======================== Labs Management System ================================" << endl;
         cout << "1. Academic Officer" << endl;
         cout << "2. Attendant" << endl;
         cout << "3. Head of Department" << endl;

@@ -2,14 +2,14 @@
 <!--Detailed report on module StorageManager-->
 <CCCC_Project>
 <module_summary>
-<lines_of_code value="374" level="0" />
+<lines_of_code value="426" level="0" />
 <lines_of_code_per_member_function value="******" level="0" />
-<McCabes_cyclomatic_complexity value="88" level="0" />
+<McCabes_cyclomatic_complexity value="104" level="0" />
 <McCabes_cyclomatic_complexity_per_member_function value="******" level="2" />
-<lines_of_code value="0" level="0" />
-<lines_of_code_per_member_function value="********" level="0" />
-<lines_of_code_per_line_of_comment value="******" level="2" />
-<McCabes_cyclomatic_complexity_per_line_of_comment value="******" level="2" />
+<lines_of_code value="11" level="0" />
+<lines_of_code_per_member_function value="********" level="2" />
+<lines_of_code_per_line_of_comment value="38.727" level="2" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="9.455" level="1" />
 <weighted_methods_per_class_unity value="24" level="0" />
 <weighted_methods_per_class_visibility value="23" level="0" />
 <depth_of_inheritance_tree value="0" level="0" />
@@ -36,7 +36,7 @@
 <name>ensureDataDir()</name>
 <extent>
 <description>definition</description>
-<source_reference file="src\StorageManager.cpp" line="19" />
+<source_reference file="src\StorageManager.cpp" line="20" />
 </extent>
 <extent>
 <description>declaration</description>
@@ -52,7 +52,7 @@
 <name>findBuilding(const string &amp;)</name>
 <extent>
 <description>definition</description>
-<source_reference file="src\StorageManager.cpp" line="61" />
+<source_reference file="src\StorageManager.cpp" line="104" />
 </extent>
 <extent>
 <description>declaration</description>
@@ -68,7 +68,7 @@
 <name>findInstructor(const string &amp;)</name>
 <extent>
 <description>definition</description>
-<source_reference file="src\StorageManager.cpp" line="164" />
+<source_reference file="src\StorageManager.cpp" line="207" />
 </extent>
 <extent>
 <description>declaration</description>
@@ -84,7 +84,7 @@
 <name>findMakeupRequest(const string &amp;)</name>
 <extent>
 <description>definition</description>
-<source_reference file="src\StorageManager.cpp" line="372" />
+<source_reference file="src\StorageManager.cpp" line="441" />
 </extent>
 <extent>
 <description>declaration</description>
@@ -100,7 +100,7 @@
 <name>findRoom(const string &amp;)</name>
 <extent>
 <description>definition</description>
-<source_reference file="src\StorageManager.cpp" line="107" />
+<source_reference file="src\StorageManager.cpp" line="150" />
 </extent>
 <extent>
 <description>declaration</description>
@@ -116,7 +116,7 @@
 <name>findRoomsByBuilding(const string &amp;)</name>
 <extent>
 <description>definition</description>
-<source_reference file="src\StorageManager.cpp" line="119" />
+<source_reference file="src\StorageManager.cpp" line="162" />
 </extent>
 <extent>
 <description>declaration</description>
@@ -132,7 +132,7 @@
 <name>findSection(const string &amp;)</name>
 <extent>
 <description>definition</description>
-<source_reference file="src\StorageManager.cpp" line="256" />
+<source_reference file="src\StorageManager.cpp" line="299" />
 </extent>
 <extent>
 <description>declaration</description>
@@ -148,7 +148,7 @@
 <name>findSessionsBySection(const string &amp;)</name>
 <extent>
 <description>definition</description>
-<source_reference file="src\StorageManager.cpp" line="302" />
+<source_reference file="src\StorageManager.cpp" line="345" />
 </extent>
 <extent>
 <description>declaration</description>
@@ -164,23 +164,23 @@
 <name>findSessionsByWeek(const Date &amp;)</name>
 <extent>
 <description>definition</description>
-<source_reference file="src\StorageManager.cpp" line="313" />
+<source_reference file="src\StorageManager.cpp" line="356" />
 </extent>
 <extent>
 <description>declaration</description>
 <source_reference file="include\StorageManager.h" line="48" />
 </extent>
-<lines_of_code value="25" level="0" />
-<McCabes_cyclomatic_complexity value="9" level="0" />
-<lines_of_comment value="0" level="0" />
-<lines_of_code_per_line_of_comment value="******" level="2" />
-<McCabes_cyclomatic_complexity_per_line_of_comment value="******" level="2" />
+<lines_of_code value="37" level="1" />
+<McCabes_cyclomatic_complexity value="11" level="1" />
+<lines_of_comment value="9" level="0" />
+<lines_of_code_per_line_of_comment value="4.111" level="0" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="1.222" level="0" />
 </member_function>
 <member_function>
 <name>findTA(const string &amp;)</name>
 <extent>
 <description>definition</description>
-<source_reference file="src\StorageManager.cpp" line="210" />
+<source_reference file="src\StorageManager.cpp" line="253" />
 </extent>
 <extent>
 <description>declaration</description>
@@ -196,23 +196,23 @@
 <name>loadBuildings()</name>
 <extent>
 <description>definition</description>
-<source_reference file="src\StorageManager.cpp" line="45" />
+<source_reference file="src\StorageManager.cpp" line="65" />
 </extent>
 <extent>
 <description>declaration</description>
 <source_reference file="include\StorageManager.h" line="30" />
 </extent>
-<lines_of_code value="16" level="0" />
-<McCabes_cyclomatic_complexity value="4" level="0" />
-<lines_of_comment value="0" level="0" />
-<lines_of_code_per_line_of_comment value="------" level="0" />
-<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+<lines_of_code value="37" level="1" />
+<McCabes_cyclomatic_complexity value="12" level="1" />
+<lines_of_comment value="2" level="0" />
+<lines_of_code_per_line_of_comment value="18.500" level="1" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="6.000" level="1" />
 </member_function>
 <member_function>
 <name>loadInstructors()</name>
 <extent>
 <description>definition</description>
-<source_reference file="src\StorageManager.cpp" line="148" />
+<source_reference file="src\StorageManager.cpp" line="191" />
 </extent>
 <extent>
 <description>declaration</description>
@@ -228,7 +228,7 @@
 <name>loadMakeupRequests()</name>
 <extent>
 <description>definition</description>
-<source_reference file="src\StorageManager.cpp" line="356" />
+<source_reference file="src\StorageManager.cpp" line="425" />
 </extent>
 <extent>
 <description>declaration</description>
@@ -244,7 +244,7 @@
 <name>loadRooms()</name>
 <extent>
 <description>definition</description>
-<source_reference file="src\StorageManager.cpp" line="91" />
+<source_reference file="src\StorageManager.cpp" line="134" />
 </extent>
 <extent>
 <description>declaration</description>
@@ -260,7 +260,7 @@
 <name>loadSections()</name>
 <extent>
 <description>definition</description>
-<source_reference file="src\StorageManager.cpp" line="240" />
+<source_reference file="src\StorageManager.cpp" line="283" />
 </extent>
 <extent>
 <description>declaration</description>
@@ -276,7 +276,7 @@
 <name>loadSessions()</name>
 <extent>
 <description>definition</description>
-<source_reference file="src\StorageManager.cpp" line="286" />
+<source_reference file="src\StorageManager.cpp" line="329" />
 </extent>
 <extent>
 <description>declaration</description>
@@ -292,7 +292,7 @@
 <name>loadTAs()</name>
 <extent>
 <description>definition</description>
-<source_reference file="src\StorageManager.cpp" line="194" />
+<source_reference file="src\StorageManager.cpp" line="237" />
 </extent>
 <extent>
 <description>declaration</description>
@@ -308,23 +308,23 @@
 <name>saveBuilding(const Building &amp;)</name>
 <extent>
 <description>definition</description>
-<source_reference file="src\StorageManager.cpp" line="27" />
+<source_reference file="src\StorageManager.cpp" line="28" />
 </extent>
 <extent>
 <description>declaration</description>
 <source_reference file="include\StorageManager.h" line="29" />
 </extent>
-<lines_of_code value="18" level="0" />
-<McCabes_cyclomatic_complexity value="3" level="0" />
+<lines_of_code value="37" level="1" />
+<McCabes_cyclomatic_complexity value="9" level="0" />
 <lines_of_comment value="0" level="0" />
-<lines_of_code_per_line_of_comment value="------" level="0" />
-<McCabes_cyclomatic_complexity_per_line_of_comment value="------" level="0" />
+<lines_of_code_per_line_of_comment value="******" level="2" />
+<McCabes_cyclomatic_complexity_per_line_of_comment value="******" level="2" />
 </member_function>
 <member_function>
 <name>saveInstructor(const Instructor &amp;)</name>
 <extent>
 <description>definition</description>
-<source_reference file="src\StorageManager.cpp" line="130" />
+<source_reference file="src\StorageManager.cpp" line="173" />
 </extent>
 <extent>
 <description>declaration</description>
@@ -340,7 +340,7 @@
 <name>saveMakeupRequest(const MakeupRequest &amp;)</name>
 <extent>
 <description>definition</description>
-<source_reference file="src\StorageManager.cpp" line="338" />
+<source_reference file="src\StorageManager.cpp" line="407" />
 </extent>
 <extent>
 <description>declaration</description>
@@ -356,7 +356,7 @@
 <name>saveRoom(const Room &amp;)</name>
 <extent>
 <description>definition</description>
-<source_reference file="src\StorageManager.cpp" line="73" />
+<source_reference file="src\StorageManager.cpp" line="116" />
 </extent>
 <extent>
 <description>declaration</description>
@@ -372,7 +372,7 @@
 <name>saveSection(const Section &amp;)</name>
 <extent>
 <description>definition</description>
-<source_reference file="src\StorageManager.cpp" line="222" />
+<source_reference file="src\StorageManager.cpp" line="265" />
 </extent>
 <extent>
 <description>declaration</description>
@@ -388,7 +388,7 @@
 <name>saveSession(const LabSession &amp;)</name>
 <extent>
 <description>definition</description>
-<source_reference file="src\StorageManager.cpp" line="268" />
+<source_reference file="src\StorageManager.cpp" line="311" />
 </extent>
 <extent>
 <description>declaration</description>
@@ -404,7 +404,7 @@
 <name>saveTA(const TA &amp;)</name>
 <extent>
 <description>definition</description>
-<source_reference file="src\StorageManager.cpp" line="176" />
+<source_reference file="src\StorageManager.cpp" line="219" />
 </extent>
 <extent>
 <description>declaration</description>
@@ -428,7 +428,7 @@
 <concrete>false</concrete>
 <extent>
 <description>pass by reference</description>
-<source_reference file="src\StorageManager.cpp" line="27" />
+<source_reference file="src\StorageManager.cpp" line="28" />
 </extent>
 <extent>
 <description>pass by reference</description>
@@ -439,7 +439,7 @@
 <concrete>false</concrete>
 <extent>
 <description>pass by reference</description>
-<source_reference file="src\StorageManager.cpp" line="130" />
+<source_reference file="src\StorageManager.cpp" line="173" />
 </extent>
 <extent>
 <description>pass by reference</description>
@@ -450,7 +450,7 @@
 <concrete>false</concrete>
 <extent>
 <description>pass by reference</description>
-<source_reference file="src\StorageManager.cpp" line="268" />
+<source_reference file="src\StorageManager.cpp" line="311" />
 </extent>
 <extent>
 <description>pass by reference</description>
@@ -461,7 +461,7 @@
 <concrete>false</concrete>
 <extent>
 <description>pass by reference</description>
-<source_reference file="src\StorageManager.cpp" line="338" />
+<source_reference file="src\StorageManager.cpp" line="407" />
 </extent>
 <extent>
 <description>pass by reference</description>
@@ -472,7 +472,7 @@
 <concrete>false</concrete>
 <extent>
 <description>pass by reference</description>
-<source_reference file="src\StorageManager.cpp" line="73" />
+<source_reference file="src\StorageManager.cpp" line="116" />
 </extent>
 <extent>
 <description>pass by reference</description>
@@ -483,7 +483,7 @@
 <concrete>false</concrete>
 <extent>
 <description>pass by reference</description>
-<source_reference file="src\StorageManager.cpp" line="222" />
+<source_reference file="src\StorageManager.cpp" line="265" />
 </extent>
 <extent>
 <description>pass by reference</description>
@@ -494,7 +494,7 @@
 <concrete>false</concrete>
 <extent>
 <description>pass by reference</description>
-<source_reference file="src\StorageManager.cpp" line="176" />
+<source_reference file="src\StorageManager.cpp" line="219" />
 </extent>
 <extent>
 <description>pass by reference</description>
@@ -505,35 +505,35 @@
 <concrete>true</concrete>
 <extent>
 <description>pass by reference</description>
-<source_reference file="src\StorageManager.cpp" line="61" />
+<source_reference file="src\StorageManager.cpp" line="104" />
 </extent>
 <extent>
 <description>pass by reference</description>
-<source_reference file="src\StorageManager.cpp" line="107" />
+<source_reference file="src\StorageManager.cpp" line="150" />
 </extent>
 <extent>
 <description>pass by reference</description>
-<source_reference file="src\StorageManager.cpp" line="119" />
+<source_reference file="src\StorageManager.cpp" line="162" />
 </extent>
 <extent>
 <description>pass by reference</description>
-<source_reference file="src\StorageManager.cpp" line="164" />
+<source_reference file="src\StorageManager.cpp" line="207" />
 </extent>
 <extent>
 <description>pass by reference</description>
-<source_reference file="src\StorageManager.cpp" line="210" />
+<source_reference file="src\StorageManager.cpp" line="253" />
 </extent>
 <extent>
 <description>pass by reference</description>
-<source_reference file="src\StorageManager.cpp" line="256" />
+<source_reference file="src\StorageManager.cpp" line="299" />
 </extent>
 <extent>
 <description>pass by reference</description>
-<source_reference file="src\StorageManager.cpp" line="302" />
+<source_reference file="src\StorageManager.cpp" line="345" />
 </extent>
 <extent>
 <description>pass by reference</description>
-<source_reference file="src\StorageManager.cpp" line="372" />
+<source_reference file="src\StorageManager.cpp" line="441" />
 </extent>
 <extent>
 <description>has by value</description>

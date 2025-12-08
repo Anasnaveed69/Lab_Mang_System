@@ -8,7 +8,7 @@ Detailed report on module LabSession
 <TR>
 <TH BGCOLOR="AQUA" WIDTH=70%>Metric</TH><TH BGCOLOR="AQUA" WIDTH=10%>Tag</TH><TH BGCOLOR="AQUA" WIDTH=10%>Overall</TH><TH BGCOLOR="AQUA" WIDTH=10%>Per Function</TH></TR>
 <TR>
-<TD>Lines of Code</TD><TD>LOC</TD><TD ALIGN=RIGHT>    97</TD><TD ALIGN=RIGHT>******</TD></TR>
+<TD>Lines of Code</TD><TD>LOC</TD><TD ALIGN=RIGHT>    98</TD><TD ALIGN=RIGHT>******</TD></TR>
 <TR>
 <TD>McCabe's Cyclomatic Number</TD><TD>MVG</TD><TD ALIGN=RIGHT>     7</TD><TD ALIGN=RIGHT BGCOLOR="RED"><STRONG>******</STRONG></TD></TR>
 <TR>
@@ -26,11 +26,11 @@ Detailed report on module LabSession
 <TR>
 <TD>Number of Children</TD><TD>NOC</TD><TD ALIGN=RIGHT>     0</TD><TD>&nbsp;</TD></TR>
 <TR>
-<TD>Coupling between objects</TD><TD>CBO</TD><TD ALIGN=RIGHT>     7</TD><TD>&nbsp;</TD></TR>
+<TD>Coupling between objects</TD><TD>CBO</TD><TD ALIGN=RIGHT>     8</TD><TD>&nbsp;</TD></TR>
 <TR>
-<TD>Information Flow measure ( &nbsp;inclusive&nbsp;)</TD><TD>IF4</TD><TD ALIGN=RIGHT>    36</TD><TD ALIGN=RIGHT BGCOLOR="RED"><STRONG>********</STRONG></TD></TR>
+<TD>Information Flow measure ( &nbsp;inclusive&nbsp;)</TD><TD>IF4</TD><TD ALIGN=RIGHT BGCOLOR="YELLOW"><EM>   144</EM></TD><TD ALIGN=RIGHT BGCOLOR="RED"><STRONG>********</STRONG></TD></TR>
 <TR>
-<TD>Information Flow measure ( &nbsp;visible&nbsp;)</TD><TD>IF4v</TD><TD ALIGN=RIGHT>    25</TD><TD ALIGN=RIGHT BGCOLOR="RED"><STRONG>********</STRONG></TD></TR>
+<TD>Information Flow measure ( &nbsp;visible&nbsp;)</TD><TD>IF4v</TD><TD ALIGN=RIGHT BGCOLOR="YELLOW"><EM>   100</EM></TD><TD ALIGN=RIGHT BGCOLOR="RED"><STRONG>********</STRONG></TD></TR>
 <TR>
 <TD>Information Flow measure ( &nbsp;concrete&nbsp;)</TD><TD>IF4c</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>********</TD></TR>
 </TABLE>
@@ -41,6 +41,11 @@ Detailed report on module LabSession
 <CODE><A HREF="cccc_src.html#include\LabSession.h:        39">include\LabSession.h:39</A></CODE><BR>
 </TD>
 <TD ALIGN=RIGHT>    10</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>------</TD><TD ALIGN=RIGHT>------</TD></TR>
+<TR>
+<TD>declaration &nbsp;
+<CODE><A HREF="cccc_src.html#include\HeadOfDepartmentUI.h:         8">include\HeadOfDepartmentUI.h:8</A></CODE><BR>
+</TD>
+<TD ALIGN=RIGHT>     1</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>     0</TD><TD ALIGN=RIGHT>------</TD><TD ALIGN=RIGHT>------</TD></TR>
 <TR><TD HEIGHT=12 COLSPAN=6></TD></TR>
 </TR></TABLE>
 <H2><A NAME="proc">Functions</A></H2>
@@ -174,9 +179,16 @@ declaration &nbsp;
 <TR><TH WIDTH=50%>Clients</TH><TH WIDTH=50%>Suppliers</TH></TR>
 <TR>
 <TD WIDTH=50%>
+HeadOfDepartmentUI [V] <BR>
+pass by reference &nbsp;
+<CODE><A HREF="cccc_src.html#src\HeadOfDepartmentUI.cpp:        38">src\HeadOfDepartmentUI.cpp:38</A></CODE><BR>
+pass by reference &nbsp;
+<CODE><A HREF="cccc_src.html#include\HeadOfDepartmentUI.h:        29">include\HeadOfDepartmentUI.h:29</A></CODE><BR>
+<BR>
+<BR>
 StorageManager [V] <BR>
 pass by reference &nbsp;
-<CODE><A HREF="cccc_src.html#src\StorageManager.cpp:       268">src\StorageManager.cpp:268</A></CODE><BR>
+<CODE><A HREF="cccc_src.html#src\StorageManager.cpp:       311">src\StorageManager.cpp:311</A></CODE><BR>
 pass by reference &nbsp;
 <CODE><A HREF="cccc_src.html#include\StorageManager.h:        45">include\StorageManager.h:45</A></CODE><BR>
 <BR>
